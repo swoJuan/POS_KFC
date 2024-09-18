@@ -323,7 +323,7 @@ html {
 body {
   background-color: var(--altern-colors-blue-blue-grey);
   display: block;
-  font-family: "National 2 Condensed";
+  font-family: "National 2 Condensed", sans-serif;
   font-size: 16px;
   margin: 0;
   padding: var(--sizing-sm);
@@ -393,114 +393,138 @@ html,
 /* Tags Generals CSS */
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-Black.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-Black.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-Black.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-LightItalic.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-LightItalic.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-LightItalic.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-Medium.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-Medium.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-Medium.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-BoldItalic.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-BoldItalic.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-BoldItalic.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-ExtraboldItalic.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-ExtraboldItalic.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-ExtraboldItalic.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-ExtraboldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-BlackItalic.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-BlackItalic.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-BlackItalic.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-BlackItalic.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-Light.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-Light.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-Light.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-Extrabold.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-Extrabold.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-Extrabold.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-Extrabold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-Extralight.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-Extralight.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-Extralight.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-Extralight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-Bold.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-Bold.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-Bold.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-ExtralightItalic.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-ExtralightItalic.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-ExtralightItalic.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-ExtralightItalic.woff") format("woff");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-RegularItalic.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-RegularItalic.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-RegularItalic.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-RegularItalic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-ThinItalic.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-ThinItalic.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-ThinItalic.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-ThinItalic.woff") format("woff");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-Thin.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-Thin.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-Thin.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-Regular.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-Regular.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-Regular.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "National 2 Condensed";
-  src: url("assets/fonts/national2Condensed/National2Condensed-MediumItalic.woff2") format("woff2"), url("assets/fonts/national2Condensed/National2Condensed-MediumItalic.woff") format("woff");
+  src: url("../assets/fonts/national2Condensed/National2Condensed-MediumItalic.woff2") format("woff2"), url("../assets/fonts/national2Condensed/National2Condensed-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "National 2 Narrow";
+  src: url("../assets/fonts/national2Narrow/National2Narrow-Regular.eot");
+  src: url("../assets/fonts/national2Narrow/National2Narrow-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/national2Narrow/National2Narrow-Regular.woff2") format("woff2"), url("../assets/fonts/national2Narrow/National2Narrow-Regular.woff") format("woff"), url("../assets/fonts/national2Narrow/National2Narrow-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "National 2 Narrow";
+  src: url("../assets/fonts/national2Narrow/National2Narrow-Medium.eot");
+  src: url("../assets/fonts/national2Narrow/National2Narrow-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/national2Narrow/National2Narrow-Medium.woff2") format("woff2"), url("../assets/fonts/national2Narrow/National2Narrow-Medium.woff") format("woff"), url("../assets/fonts/national2Narrow/National2Narrow-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "National 2 Narrow";
+  src: url("../assets/fonts/national2Narrow/National2Narrow-Black.eot");
+  src: url("../assets/fonts/national2Narrow/National2Narrow-Black.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/national2Narrow/National2Narrow-Black.woff2") format("woff2"), url("../assets/fonts/national2Narrow/National2Narrow-Black.woff") format("woff"), url("../assets/fonts/national2Narrow/National2Narrow-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
   font-display: swap;
 }
 /* Tags Generals CSS */
@@ -528,7 +552,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "National 2 Condensed";
+  font-family: "National 2 Condensed", sans-serif;
   line-height: normal;
   letter-spacing: 0%;
   font-weight: 500;
@@ -591,11 +615,137 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
+/* Estilos de fuente */ /* Estilos de fuente */
+.font-thin {
+  font-weight: 100;
+}
+
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400; /* Normal */
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.font-national2condensed {
+  font-family: "National 2 Condensed", sans-serif;
+}
+
+.font-national2narrow {
+  font-family: "National 2 Narrow", sans-serif;
+}
+
+.font-14 {
+  font-size: 0.875rem;
+}
+
+.font-16 {
+  font-size: 1rem;
+}
+
+.font-18 {
+  font-size: 1.125rem;
+}
+
+.font-20 {
+  font-size: 1.25rem;
+}
+
+.font-24 {
+  font-size: 1.5rem;
+}
+
+.font-28 {
+  font-size: 1.75rem;
+}
+
+.font-32 {
+  font-size: 2rem;
+}
+
+.font-36 {
+  font-size: 2.25rem;
+}
+
+.font-40 {
+  font-size: 2.5rem;
+}
+
+.font-44 {
+  font-size: 2.75rem;
+}
+
+.font-48 {
+  font-size: 3rem;
+}
+
 /* Tags Generals CSS */
 .material-symbols-outlined {
   margin: 0;
   padding: 0;
   font-weight: 300;
+}
+
+/* Tags Generals CSS */
+.size-xxxs {
+  font-size: 0.125rem;
+}
+
+.size-xxs {
+  font-size: 0.25rem;
+}
+
+.size-xs {
+  font-size: 0.5rem;
+}
+
+.size-sm {
+  font-size: 0.75rem;
+}
+
+.size-md {
+  font-size: 1rem;
+}
+
+.size-lg {
+  font-size: 1.5rem;
+}
+
+.size-xl {
+  font-size: 2rem;
+}
+
+.size-xxl {
+  font-size: 2.5rem;
+}
+
+.size-xxxl {
+  font-size: 3rem;
 }
 
 /** spacing utilities ***/

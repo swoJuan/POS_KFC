@@ -1,10 +1,10 @@
 @use "../abstracts/index" as *;
 
-// Font Face
+// Font Face National 2 Condensed
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-Black.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-Black.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-Black.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -12,8 +12,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-LightItalic.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-LightItalic.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-LightItalic.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-LightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -21,8 +21,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-Medium.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-Medium.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-Medium.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -30,8 +30,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-BoldItalic.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-BoldItalic.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-BoldItalic.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -39,8 +39,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-ExtraboldItalic.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-ExtraboldItalic.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-ExtraboldItalic.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-ExtraboldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -48,8 +48,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-BlackItalic.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-BlackItalic.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-BlackItalic.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-BlackItalic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -57,8 +57,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-Light.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-Light.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-Light.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -66,8 +66,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-Extrabold.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-Extrabold.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-Extrabold.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-Extrabold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -75,8 +75,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-Extralight.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-Extralight.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-Extralight.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-Extralight.woff') format('woff');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -84,8 +84,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-Bold.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-Bold.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-Bold.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -93,8 +93,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-ExtralightItalic.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-ExtralightItalic.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-ExtralightItalic.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-ExtralightItalic.woff') format('woff');
   font-weight: 200;
   font-style: italic;
   font-display: swap;
@@ -102,8 +102,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-RegularItalic.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-RegularItalic.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-RegularItalic.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-RegularItalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -111,8 +111,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-ThinItalic.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-ThinItalic.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-ThinItalic.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-ThinItalic.woff') format('woff');
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -120,8 +120,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-Thin.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-Thin.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-Thin.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -129,8 +129,8 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-Regular.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-Regular.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-Regular.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -138,11 +138,48 @@
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('assets/fonts/national2Condensed/National2Condensed-MediumItalic.woff2') format('woff2'),
-      url('assets/fonts/national2Condensed/National2Condensed-MediumItalic.woff') format('woff');
+  src: url('../assets/fonts/national2Condensed/National2Condensed-MediumItalic.woff2') format('woff2'),
+      url('../assets/fonts/national2Condensed/National2Condensed-MediumItalic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 
 
+// National 2 Narrow
+
+@font-face {
+  font-family: 'National 2 Narrow';
+  src: url('../assets/fonts/national2Narrow/National2Narrow-Regular.eot');
+  src: url('../assets/fonts/national2Narrow/National2Narrow-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/national2Narrow/National2Narrow-Regular.woff2') format('woff2'),
+      url('../assets/fonts/national2Narrow/National2Narrow-Regular.woff') format('woff'),
+      url('../assets/fonts/national2Narrow/National2Narrow-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'National 2 Narrow';
+  src: url('../assets/fonts/national2Narrow/National2Narrow-Medium.eot');
+  src: url('../assets/fonts/national2Narrow/National2Narrow-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/national2Narrow/National2Narrow-Medium.woff2') format('woff2'),
+      url('../assets/fonts/national2Narrow/National2Narrow-Medium.woff') format('woff'),
+      url('../assets/fonts/national2Narrow/National2Narrow-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'National 2 Narrow';
+  src: url('../assets/fonts/national2Narrow/National2Narrow-Black.eot');
+  src: url('../assets/fonts/national2Narrow/National2Narrow-Black.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/national2Narrow/National2Narrow-Black.woff2') format('woff2'),
+      url('../assets/fonts/national2Narrow/National2Narrow-Black.woff') format('woff'),
+      url('../assets/fonts/national2Narrow/National2Narrow-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

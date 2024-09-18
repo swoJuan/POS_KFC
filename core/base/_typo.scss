@@ -93,3 +93,77 @@ a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
 }
+
+/* Estilos de fuente *//* Estilos de fuente */
+
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400; /* Normal */
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+//***********
+// Fonts
+//******
+
+.font-national2condensed {
+  font-family: $font-national2Condensed;
+}
+
+.font-national2narrow {
+  font-family: $font-national2narrow;
+}
+
+
+$font-sizes: (
+  14: 0.875rem,  // 14px
+  16: 1rem,      // 16px
+  18: 1.125rem,  // 18px
+  20: 1.25rem,   // 20px
+  24: 1.5rem,    // 24px
+  28: 1.75rem,   // 28px
+  32: 2rem,      // 32px
+  36: 2.25rem,   // 36px
+  40: 2.5rem,    // 40px
+  44: 2.75rem,   // 44px
+  48: 3rem       // 48px
+);
+
+@for $i from 14 through 48 {
+  @if map-has-key($font-sizes, $i) {
+    .font-#{$i} {
+      font-size: map-get($font-sizes, $i);
+    }
+  }
+}
