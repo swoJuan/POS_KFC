@@ -1,0 +1,44 @@
+.mxp-radio-button-form-group {
+  input {
+    display: none;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: var(--sizing-xs);
+    cursor: pointer;
+  }
+  .mxp-radio-button {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    border: 1px solid black;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      background-color: var(--main-colors-rojo);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+}
+
+input:checked + label .mxp-radio-button::after {
+  opacity: 1;
+}
+
+input:checked + label {
+  color: var(--gray-scale-dark);
+}

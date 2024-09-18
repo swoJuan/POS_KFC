@@ -1,0 +1,81 @@
+@use "../abstracts/index"as *;
+
+/** 
+* container component
+**/
+
+/** section **/
+.bp-section {
+    padding: 1.5rem;
+    background-color: $color-white;
+}
+
+.bp-section-shadow {
+    box-shadow: 0 0px 10px $color-grey-light-1;
+}
+
+.bp-section-shadow--2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.bp-section-shadow--strong {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.bp-section-border {
+    border: 1px solid $color-grey-border;
+}
+
+.bp-section-radius {
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+/** end section **/
+
+
+/*** background color section ***/
+$colors: (
+    "info": $color-bg-info,
+    "alert": $color-bg-alert,
+    "ok": $color-bg-ok,
+    "error": $color-bg-error,
+    "disabled": $color-bg-disabled,
+    "white": $color-white,
+    "selected-area": $color-cyan-selected-area,
+    "table": $color-cyan-table,
+    "table-hover": $color-cyan-hover,
+    "cyan-05": $color-cyan-05,
+    "cyan-10": $color_cyan-10,
+    "cyan-25": $color_cyan-25,
+    "cyan-50": $color_cyan-50,
+    "grey-border": $color-grey-border,
+    "grey-light":$color-grey-light-0,
+    "grey-light-1":$color-grey-light-1,
+    "grey-light-2":$color-grey-light-2,
+    "grey-light-3":$color-grey-light-3,
+    "warm-grey": $color-warm-grey);
+
+@each $color,
+$valueColor in $colors {
+
+    //ex. .bp-color-black
+    .bp-bg-#{$color} {
+        background-color: $valueColor;
+    }
+
+    /// important
+    .bp-bg-#{$color}--important {
+        background-color: $valueColor !important;
+    }
+}
+
+
+/*** end background color section ***/
+
+/** 
+* end section component
+**/

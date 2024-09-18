@@ -1,0 +1,55 @@
+@use "../abstracts/index"as *;
+/** Components Inputs ***/
+
+::-webkit-input-placeholder {
+    color: var(--altern-colors-blue-blue-grey) !important;
+  }
+  
+  ::-moz-placeholder {
+    color: var(--altern-colors-blue-blue-grey) !important;
+  }
+  
+  :-ms-input-placeholder {
+    color: var(--altern-colors-blue-blue-grey) !important;
+  }
+  
+  :-moz-placeholder {
+    color: var(--altern-colors-blue-blue-grey) !important;
+  }
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+  }
+
+
+input[type="checkbox"],
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="hidden"],
+input[type="image"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="radio"],
+input[type="range"],
+input[type="reset"],
+input[type="search"],
+input[type="submit"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -webkit-border-radius: 0.65em;
+  -moz-border-radius: 0.65em;
+  background-color: var(--main-colors-white);
+  border: 1px solid var(--gray-scale-gray-4);
+  border-radius: 0.65em;
+  line-height: normal;
+  margin: 0 0 0 0;
+  padding: var(--sizing-xs);
+}

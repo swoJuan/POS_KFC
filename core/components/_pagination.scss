@@ -1,0 +1,105 @@
+@use "../abstracts/index"as *;
+
+/*** pagination component **/
+
+
+.ngx-pagination {
+    display: flex;
+
+    li {
+        font-size: $font-14;
+
+        a {
+            text-decoration: none;
+            color: $color-grey-black;
+            border: 1px solid $color-grey-border;
+            padding: 0;
+            border-radius: 0.2rem;
+            display: block;
+            font-size: $font-14;
+            min-width: 2rem;
+            min-height: 32px;
+            margin: 0 0.125rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover,
+            &:focus {
+                background-color: $color-active;
+                color: $color-white;
+                border-color: $color-active;
+            }
+
+            span {
+                font-size: $font-14;
+            }
+        }
+
+        &.disabled a {
+            background-color: $color-bg-disabled;
+            color: $color-text-disabled;
+            border-color: $color-border-disabled;
+        }
+
+        &.current {
+            text-decoration: none;
+            padding: 0;
+            border-radius: 0.2rem;
+            display: block;
+            font-size: $font-14;
+            min-width: 2rem;
+            min-height: 32px;
+            margin: 0 0.125rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-white;
+            color: $color-primary;
+            border: 1px solid $color-primary;
+            font-weight: bold;
+        }
+        &.small-screen
+        {
+            text-decoration: none;
+            padding: 0;
+            border-radius: 0.2rem;
+            display: block;
+            font-size: $font-14;
+            padding-left: 0.3rem;
+            padding-right: 0.3rem;
+            min-height: 32px;
+            margin: 0 0.125rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-white;
+            color: $color-grey-black;
+            border:0;
+            font-weight: bold;
+        }
+
+        .show-for-sr {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .small-screen {
+            display: none !important;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        li {
+            display: none !important;
+
+            &.pagination-previous,
+            &.pagination-next,  &.small-screen {
+                display: flex !important;
+            }
+        }
+    }
+}
+
+/*** end pagination component **/

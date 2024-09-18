@@ -1,0 +1,144 @@
+@use "../abstracts/variables"as *;
+
+/** 
+* border colors
+**/
+.bp-border {
+  border: 1px solid $color-grey-border;
+}
+
+.bp-border-top {
+  border-top: 1px solid $color-grey-border;
+}
+
+.bp-border-bottom {
+  border-bottom: 1px solid $color-grey-border;
+}
+
+.bp-border-left {
+  border-left: 1px solid $color-grey-border;
+}
+
+.bp-border-right {
+  border: 1px solid $color-grey-border;
+}
+
+.bp-border {
+  border: 1px solid $color-grey-border;
+}
+
+.bp-border-0 {
+  border: 0 !important;
+}
+
+.bp-border-top-0 {
+  border-top: 0 !important;
+}
+
+.bp-border-right-0 {
+  border-right: 0 !important;
+}
+
+.bp-border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+.bp-border-left-0 {
+  border-left: 0 !important;
+}
+
+
+$colors: ( // Add colors new to list. The function generate the colors in css
+  "black": $color-black,
+  "white": $color-white,
+
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+
+  "grey-border": $color-grey-border,
+  "grey-black":$color-grey-black,
+  "grey":$color-grey,
+
+  // estados 
+  "ok":$color-text-ok,
+  "info":$color-text-info,
+  "alert":$color-text-alert,
+  "error":$color-text-error,
+  "online":$color-online,
+  "busy":$color-busy,
+  "offline":$color-offline,
+  "disabled":$color-border-disabled,
+  "active":$color-active,
+
+);
+
+@each $color,
+$valueColor in $colors {
+
+  //ex. .bp-color-black
+  .bp-border-color-#{$color} {
+    border-color: $valueColor;
+  }
+}
+
+.bp-border-color {
+  border: 1px solid $color-grey-border;
+}
+
+
+$borderWidth: ( // Add colors new to list. The function generate the colors in css
+  "1px": 1px,
+  "2px": 2px,
+  "3px": 3px,
+  "4px": 4px,
+  "5px": 5px);
+
+@each $key,
+$value in $borderWidth {
+
+  //ex. .bp-color-black
+  .bp-border-width--#{$key} {
+    border-width: $value;
+  }
+
+  .bp-border-width--#{$key}--important {
+    border-width: $value !important;
+  }
+}
+
+
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+.rounded-top {
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+}
+
+.rounded-right {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+.rounded-left {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+/** 
+  * end border colors
+  **/

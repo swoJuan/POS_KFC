@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo KFC POS</title>
+    <!-- bootstrap 5.3.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- material symbols -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- estilos css -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/core.css" />
+    <link rel="stylesheet" href="/assets/fonts/kfc/kfc.css" />
+    <!-- <link rel="stylesheet" href="libs/demo-files/demo.css" /> -->
+
+    <!-- bootstrap bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- main container -->
+    <div class="mxp-main-container">
+      <!-- container left -->
+      <aside class="mxp-left-container">
+        <!-- component menus -->
+        <section class="mxp-component-menus">
+          <!-- component reutilizable dropdown-->
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Menus
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menú Salón</a></li>
+              <li><a class="dropdown-item" href="#">Menú delivery</a></li>
+              <li><a class="dropdown-item" href="#">Menú drive</a></li>
+            </ul>
+          </div>
+        </section>
+        <!-- component registered user -->
+        <section class="mxp-component-registered-user">
+          <div class="mxp-content-detail-user">
+            <h6>Cliente:</h6>
+            <p>Juan Camilo Restrepo</p>
+          </div>
+          <button class="mxp-button-edit-user">
+            <span class="material-symbols-rounded"> edit_note </span>
+          </button>
+        </section>
+        <!-- component order -->
+        <section class="mxp-component-summary-order">
+          <h5>Pedido</h5>
+          <!-- items order -->
+          <section class="mxp-content-summary-order">
+            <ul class="m-0 p-0">
+              <li class="mxp-border-bottom-dashed">
+                <div class="swipe-container">
+                  <div class="reveal-left">
+                    <button type="button" class="mxp-btn">
+                      <em class="material-symbols-rounded">content_copy</em>
+                    </button>
+                  </div>
+                  <div class="swipe-item">
+                    <!-- <button type="button">
+                      <em class="material-symbols-rounded">content_copy</em>
+                    </button> -->
+                    <div class="mxp-ItemLista_producto-ordenar">
+                      <span class="mxp-tag-cupon active">Cupón</span>
+                      <div class="mxp-contenedor-producto">
+                        <div class="mxp-cantidades-prodto">3</div>
+                        <div class="mxp-info-prodto">
+                          <div class="mxp-nombre-plu">
+                            Big Box kentuckt Sandwich Nuggets
+                          </div>
+                          <div class="mxp-descripcion-plu">
+                            6 Presas de Pollo + 3 Papas Pequeñas
+                          </div>
+                          <span class="mxp-carga-tag-menu color-tag-purpura"
+                            >Domicilios</span
+                          >
+                        </div>
+                        <div class="mxp-precio-item-prodto">$19.90</div>
+                        <div class="mxp-icono-borrar-item">
+                          <em class="material-symbols-rounded">delete</em>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <button type="button">
+                      <em class="material-symbols-rounded">delete</em>
+                    </button> -->
+                  </div>
+                  <div class="reveal-right">
+                    <button type="button" class="mxp-btn">
+                      <em class="material-symbols-rounded">delete</em>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!-- section summary amount -->
+          <div class="mxp-content-summary-amount-items-container">
+            <!-- button group Discount disable -->
+            <div
+              class="btn-group mxp-btn-group mxp-btn-group-disable w-100 my-1"
+              role="group"
+              aria-label="Button group with nested dropdown"
+            >
+              <button type="button" class="mxp-btn-left-group w-100" disabled>
+                Agregar beneficio
+              </button>
+
+              <div class="btn-group" role="group">
+                <button
+                  type="button"
+                  class="dropdown-toggle mxp-btn-right-group"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  disabled
+                ></button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Agregar beneficio</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Consultar beneficio</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- button group Discount -->
+            <div
+              class="btn-group mxp-btn-group mxp-btn-group-primary w-100"
+              role="group"
+              aria-label="Button group with nested dropdown"
+            >
+              <button
+                type="button"
+                class="mxp-btn-left-group w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Agregar cupón
+              </button>
+
+              <div class="btn-group" role="group">
+                <button
+                  type="button"
+                  class="dropdown-toggle mxp-btn-right-group"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                      href="#"
+                      >Agregar cupón</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                      href="#"
+                      >Consultar cupón</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mxp-datosDePago">
+              <div class="mxp-SummarySubtotalContainer">
+                <span>Subtotal:</span><span>$ 12.50</span>
+              </div>
+              <div class="mxp-DiscountContainer">
+                <span>Descuento:</span><span>$ 12.50</span>
+              </div>
+              <div class="mxp-TaxContainer">
+                <span>IVA:</span><span>$ 12.50</span>
+              </div>
+            </div>
+            <div class="mxp-PayButton">
+              <button class="mxp-btn mxp-btn-primary w-100" type="button">
+                Facturar $ 35.59
+              </button>
+            </div>
+          </div>
+        </section>
+      </aside>
+      <!-- container right -->
+      <div class="mxp-right-container">
+        <!-- main header app -->
+        <header class="mxp-header-app">
+          <div class="mxp-logo-search-container">
+            <div class="mxp-logo-grupo-kfc">
+              <svg
+                width="76"
+                height="38"
+                viewBox="0 0 76 38"
+                fill="none"
+                rel="preload"
+              >
+                <g clip-path="url(#clip0_549_7180)">
+                  <path
+                    d="M17.4524 2.17023L17.5901 0.5C16.9132 0.570325 16.248 0.684604 15.5975 0.828185L16.629 2.1673H17.4524V2.17023Z"
+                    fill="#1D1819"
+                  />
+                  <path
+                    d="M36.6806 17.6945C36.6806 27.2442 28.9418 34.9829 19.3922 34.9829C9.84261 34.9829 2.10388 27.2442 2.10388 17.6945C2.10388 13.1908 3.82685 9.08847 6.65159 6.01174L6.70434 6.53039L10.1737 12.3615L13.9127 13.8735L15.4247 15.6991C15.4247 15.6991 16.3829 15.4529 16.3155 15.4764C16.2481 15.4969 15.202 17.4103 15.202 17.4103L16.1162 20.7039L17.9623 22.4181L15.8496 31.2967L16.5382 33.2775L18.8091 33.9427C18.8091 33.9427 17.6077 32.4541 17.5608 32.3428C17.5169 32.2314 19.3424 29.0492 19.2516 29.0052C19.1637 28.9583 23.4359 25.445 23.4359 25.445L23.5707 23.977L25.3728 23.7308L27.4621 19.5816L23.9692 17.6945L23.77 16.7657L21.0097 14.4977L17.1154 14.1636L16.6056 15.031L15.9375 14.8757L15.5155 13.3842L14.2907 13.3168L14.824 12.0275L13.7339 11.8927L12.89 12.5842L12.1985 11.8048L12.7347 10.0467L15.2694 9.66866L15.7148 11.0254H16.4268L16.5147 9.55731L18.4282 7.11057L23.6352 4.46165L22.0206 0.605469C26.372 1.2677 30.1901 3.55621 32.8361 6.82927C31.497 7.91052 30.6414 9.5661 30.6414 11.4209C30.6414 14.6823 33.2874 17.3283 36.5487 17.3283C36.5897 17.3283 36.6337 17.3283 36.6747 17.3253C36.6806 17.4484 36.6806 17.5715 36.6806 17.6945Z"
+                    fill="#1D1819"
+                  />
+                  <path
+                    d="M39.1067 7.65262C39.5521 7.78155 39.807 7.84309 39.8744 7.84309C40.0444 7.84309 40.1645 7.81086 40.2378 7.74346C40.3081 7.679 40.3696 7.5823 40.4195 7.45923H40.6803L40.774 9.96164H40.5015C40.2583 9.38439 40.0063 8.95365 39.7455 8.67234C39.2767 8.17714 38.6672 7.92807 37.9141 7.92807C37.1611 7.92807 36.4812 8.21816 35.9011 8.79541C35.3209 9.3756 35.0337 10.3279 35.0337 11.6553C35.0337 12.7512 35.3209 13.6068 35.8981 14.2222C36.4754 14.8375 37.1874 15.1452 38.0343 15.1452C38.1778 15.1452 38.3449 15.1306 38.5383 15.1042C38.7317 15.0778 38.9163 15.0339 39.0891 14.9753C39.3704 14.8815 39.5492 14.8024 39.6166 14.735C39.6869 14.6676 39.7221 14.568 39.7221 14.4361V12.5402C39.7221 12.0802 39.6576 11.796 39.5287 11.6817C39.3997 11.5674 39.1155 11.5 38.6789 11.4707V11.2509H41.7117V11.4707C41.4187 11.4912 41.2223 11.5381 41.1256 11.6172C40.9645 11.7403 40.8824 11.9982 40.8824 12.3849V14.7262C40.8824 14.8668 40.5396 15.0514 39.8569 15.2829C39.1741 15.5144 38.5148 15.6316 37.8848 15.6316C36.7244 15.6316 35.7428 15.2917 34.9458 14.6148C34.0667 13.8676 33.6272 12.8655 33.6272 11.6055C33.6272 10.4979 33.9788 9.54848 34.6791 8.76025C35.4498 7.88997 36.4724 7.45337 37.7471 7.45337C38.2071 7.45337 38.6613 7.51783 39.1067 7.64383V7.65262Z"
+                    fill="#1D1819"
+                  />
+                  <path
+                    d="M42.5468 15.2508C43.0039 15.2098 43.2881 15.1189 43.3994 14.9841C43.5108 14.8494 43.5694 14.5358 43.5694 14.0406V8.88928C43.5694 8.47025 43.5079 8.19774 43.3819 8.06588C43.2559 7.93695 42.9775 7.85491 42.5497 7.81974V7.59998H45.8433C46.5289 7.59998 47.1003 7.68788 47.5574 7.86077C48.4248 8.18895 48.8585 8.79551 48.8585 9.67751C48.8585 10.2694 48.6651 10.7236 48.2812 11.0401C47.8944 11.3565 47.3728 11.5646 46.7106 11.6671L49.1632 14.6853C49.3156 14.8699 49.465 15.0047 49.6174 15.0896C49.7698 15.1746 49.9632 15.2274 50.1976 15.2508V15.4706H48.2812L45.3041 11.8049L44.7825 11.8342V14.1783C44.7825 14.6179 44.8499 14.8962 44.9818 15.0134C45.1166 15.1307 45.4067 15.2098 45.855 15.2479V15.4676H42.5497V15.2479L42.5468 15.2508ZM46.611 11.128C47.241 10.8701 47.5574 10.3808 47.5574 9.66579C47.5574 8.95081 47.2761 8.50835 46.7106 8.25635C46.4088 8.12156 46.0074 8.05416 45.5092 8.05416C45.1722 8.05416 44.9671 8.0776 44.8909 8.12742C44.8147 8.1743 44.7767 8.28858 44.7767 8.46732V11.3946C45.6323 11.3624 46.2447 11.2745 46.611 11.128Z"
+                    fill="#1D1819"
+                  />
+                  <path
+                    d="M54.3615 7.59998V7.81974C53.9043 7.85198 53.6084 7.92816 53.4736 8.0483C53.3388 8.17137 53.2714 8.44974 53.2714 8.88635V12.6898C53.2714 13.3139 53.3564 13.8003 53.5263 14.149C53.8428 14.7849 54.4464 15.1014 55.3343 15.1014C56.3071 15.1014 56.9576 14.7761 57.2917 14.1256C57.4763 13.7622 57.5701 13.1996 57.5701 12.4407V9.34346C57.5701 8.69588 57.4939 8.29151 57.3386 8.12742C57.1833 7.96332 56.8902 7.85784 56.4566 7.81681V7.59705H59.211V7.81681C58.7509 7.86663 58.4491 7.97798 58.3085 8.15086C58.1678 8.32374 58.0975 8.72225 58.0975 9.34346V12.4407C58.0975 13.2612 57.9715 13.9029 57.7195 14.3629C57.2536 15.2098 56.3716 15.6347 55.0706 15.6347C53.7696 15.6347 52.9081 15.2156 52.4451 14.3805C52.1931 13.9322 52.0671 13.3374 52.0671 12.6019V8.88342C52.0671 8.44974 51.9997 8.17137 51.8678 8.05123C51.733 7.92816 51.443 7.85198 50.9946 7.81681V7.59705H54.3703L54.3615 7.59998Z"
+                    fill="#1D1819"
+                  />
+                  <path
+                    d="M60.0813 15.2508C60.5355 15.2098 60.8168 15.1189 60.9281 14.9812C61.0395 14.8435 61.0952 14.53 61.0952 14.0406V8.88927C61.0952 8.47611 61.0336 8.20067 60.9076 8.07174C60.7816 7.93988 60.5062 7.85784 60.0784 7.82267V7.60291H63.2166C64.2246 7.60291 64.9953 7.79923 65.5286 8.18895C66.0619 8.57867 66.3315 9.09439 66.3315 9.73318C66.3315 10.5419 66.0355 11.128 65.4436 11.4942C64.8517 11.8576 64.1104 12.0393 63.2196 12.0393C63.0906 12.0393 62.9266 12.0393 62.7302 12.0305C62.531 12.0246 62.3815 12.0217 62.2848 12.0217V14.1813C62.2848 14.6267 62.3522 14.908 62.4899 15.0252C62.6277 15.1394 62.9353 15.2156 63.41 15.2508V15.4706H60.0813V15.2508ZM64.0957 8.26221C63.7587 8.11569 63.3339 8.04244 62.8181 8.04244C62.5749 8.04244 62.4255 8.06588 62.3669 8.11569C62.3112 8.16551 62.2819 8.271 62.2819 8.43802V11.5411C62.4958 11.5616 62.6335 11.5734 62.7009 11.5763C62.7654 11.5792 62.8299 11.5822 62.8914 11.5822C63.4364 11.5822 63.8672 11.506 64.1807 11.3507C64.7492 11.0694 65.0334 10.539 65.0334 9.76541C65.0334 9.03872 64.7198 8.53765 64.0928 8.26807L64.0957 8.26221Z"
+                    fill="#1D1819"
+                  />
+                  <path
+                    d="M68.5321 8.48481C69.2646 7.78449 70.1642 7.43286 71.2337 7.43286C72.3033 7.43286 73.2087 7.78449 73.9413 8.49067C74.7354 9.25253 75.131 10.2693 75.131 11.541C75.131 12.8128 74.7207 13.8559 73.9003 14.6207C73.1648 15.3035 72.2769 15.6434 71.2337 15.6434C70.1173 15.6434 69.1914 15.2654 68.4559 14.5094C67.7087 13.7387 67.3336 12.7483 67.3336 11.541C67.3336 10.2723 67.7321 9.25253 68.5292 8.48481H68.5321ZM69.4229 14.313C69.9151 14.9108 70.5188 15.2097 71.2367 15.2097C71.9546 15.2097 72.5377 14.9196 73.0358 14.3365C73.534 13.7534 73.783 12.8215 73.783 11.5381C73.783 10.2547 73.531 9.30235 73.027 8.72509C72.523 8.14784 71.9253 7.86067 71.2367 7.86067C70.5481 7.86067 69.9181 8.15956 69.4258 8.75732C68.9306 9.35509 68.6845 10.281 68.6845 11.5381C68.6845 12.7952 68.9306 13.7123 69.4229 14.313Z"
+                    fill="#1D1819"
+                  />
+                  <path
+                    d="M1.98376 20.0153L0 18.2191V17.1788L1.98376 18.9721V20.0153Z"
+                    fill="#810C22"
+                  />
+                  <path
+                    d="M75.131 17.173H0V18.2161H75.131V17.173Z"
+                    fill="#E4002B"
+                  />
+                  <path
+                    d="M73.9062 19.9274C73.5692 19.8336 73.1385 19.7487 72.6023 19.7487C69.801 19.7487 69.0919 21.331 68.9746 22.4034C68.8457 23.6107 69.6808 24.7916 71.7349 24.7916C72.5993 24.7916 73.1649 24.6421 73.3671 24.5777C73.4169 24.563 73.455 24.5191 73.4638 24.4663L73.578 23.8568C73.5956 23.766 73.5077 23.6898 73.4198 23.7162C73.1971 23.7865 72.7986 23.8832 72.2946 23.8832C71.313 23.8832 70.6009 23.2942 70.6918 22.2774C70.7797 21.2929 71.4419 20.5457 72.3561 20.5457C72.9041 20.5457 73.1473 20.8328 73.1297 21.2167C73.1297 21.2167 73.1297 21.2226 73.1297 21.2372C73.1268 21.3075 73.1825 21.3661 73.2528 21.3661H73.6249C73.6835 21.3661 73.7333 21.3251 73.7451 21.2694L74.0058 20.0915C74.0234 20.0182 73.9765 19.9421 73.9033 19.9215L73.9062 19.9274Z"
+                    fill="#1D1819"
+                  />
+                  <path
+                    d="M63.9815 24.1586C63.7295 24.1557 63.6065 24.0971 63.3545 23.7748L62.0622 22.0254L63.7413 20.6277C63.9669 20.4519 64.2423 20.4021 64.3947 20.3816C64.3947 20.3816 64.4006 20.3816 64.4094 20.3816C64.4621 20.3757 64.506 20.3376 64.5178 20.2849L64.5852 19.9743C64.6027 19.8981 64.5441 19.8248 64.465 19.8248H62.4461C62.3846 19.8248 62.3289 19.8688 62.3172 19.9303L62.2498 20.238C62.2351 20.3054 62.2761 20.3757 62.3435 20.3962C62.4608 20.4431 62.4871 20.5545 62.3846 20.6394L60.6645 22.0694L60.9605 20.7215C61.0103 20.5134 61.1744 20.4285 61.2799 20.3962C61.2857 20.3962 61.2916 20.3933 61.2975 20.3904C61.3443 20.3757 61.3766 20.3376 61.3883 20.2907L61.4586 19.9713C61.4762 19.8952 61.4176 19.8248 61.3385 19.8248H59.1203C59.0588 19.8248 59.0031 19.8688 58.9914 19.9303L58.9181 20.2526C58.9035 20.3171 58.9416 20.3845 59.0031 20.4079C59.0148 20.4109 59.0236 20.4138 59.0265 20.4167C59.1642 20.4724 59.3283 20.5925 59.258 20.9149L58.7306 23.3352C58.5929 23.9975 58.3672 24.1323 58.1533 24.1557C58.1533 24.1557 58.1504 24.1557 58.1475 24.1557C58.0889 24.1616 58.0449 24.2055 58.0302 24.2612L57.9629 24.5718C57.9453 24.6509 58.0068 24.7271 58.0889 24.7271H60.4213C60.477 24.7271 60.5268 24.6861 60.5415 24.6304L60.6206 24.2671C60.6323 24.2084 60.603 24.1469 60.5444 24.1264C60.5385 24.1264 60.5356 24.1235 60.5297 24.1205C60.4125 24.0737 60.2514 23.9711 60.2924 23.7777L60.562 22.5412C61.4908 24.2378 61.7985 24.7271 62.912 24.7271H63.9171C63.9727 24.7271 64.0226 24.689 64.0372 24.6333L64.1075 24.3198C64.1251 24.2378 64.0665 24.1616 63.9845 24.1586H63.9815Z"
+                    fill="#1D1819"
+                  />
+                  <path
+                    d="M69.042 21.1786L69.3086 19.9743C69.3262 19.8981 69.2676 19.8248 69.1885 19.8248H65.0568C64.9953 19.8248 64.9396 19.8688 64.925 19.9303L64.8547 20.2526C64.84 20.3171 64.8752 20.3786 64.9367 20.3992C64.9426 20.3992 64.9455 20.4021 64.9514 20.405C65.0862 20.4578 65.2766 20.5896 65.1946 20.9119L64.3858 24.5777C64.3682 24.6538 64.4268 24.7271 64.506 24.7271H66.3637C66.4194 24.7271 66.4692 24.6861 66.4839 24.6304L66.5659 24.2641C66.5776 24.2084 66.5513 24.1557 66.4985 24.1323C66.4927 24.1323 66.4868 24.1264 66.4809 24.1235C66.3637 24.0649 66.1879 23.933 66.2465 23.6751C66.2524 23.64 66.4282 22.8459 66.4282 22.8459H68.0076C68.0662 22.8459 68.116 22.8049 68.1277 22.7492L68.2772 22.0782C68.2947 22.002 68.2361 21.9287 68.157 21.9287H66.6304L66.9146 20.6306H67.9812C68.327 20.6306 68.4325 20.8094 68.412 21.1171C68.412 21.1171 68.412 21.12 68.412 21.1346C68.4032 21.2079 68.4618 21.2724 68.535 21.2724H68.9277C68.9863 21.2724 69.0361 21.2313 69.0478 21.1757L69.042 21.1786Z"
+                    fill="#1D1819"
+                  />
+                  <path
+                    d="M74.6709 19.9069C74.413 19.9069 74.2079 20.1061 74.2079 20.3552C74.2079 20.6043 74.413 20.8094 74.6709 20.8094C74.9287 20.8094 75.1309 20.6101 75.1309 20.3552C75.1309 20.1003 74.9317 19.9069 74.6709 19.9069ZM74.6738 20.7156C74.4716 20.7156 74.3222 20.5574 74.3222 20.3581C74.3222 20.1589 74.4687 20.0006 74.6709 20.0006C74.8731 20.0006 75.0166 20.1618 75.0166 20.361C75.0166 20.5603 74.8701 20.7156 74.6738 20.7156Z"
+                    fill="#1D1819"
+                  />
+                  <path
+                    d="M74.7765 20.3698V20.3639C74.8322 20.3464 74.8703 20.3083 74.8703 20.2584C74.8703 20.2145 74.8498 20.1793 74.8264 20.1588C74.7941 20.1383 74.756 20.1266 74.6711 20.1266C74.5978 20.1266 74.5392 20.1324 74.4982 20.1412V20.5896H74.6037V20.4079H74.6535C74.7121 20.4079 74.7385 20.4284 74.7472 20.4782C74.7619 20.531 74.7678 20.572 74.7824 20.5866H74.8938C74.882 20.5691 74.8732 20.5427 74.8615 20.4753C74.8469 20.4137 74.8234 20.3815 74.7795 20.3669L74.7765 20.3698ZM74.6535 20.3376H74.6037V20.2086C74.6037 20.2086 74.633 20.2028 74.6623 20.2028C74.7267 20.2028 74.759 20.2291 74.759 20.2702C74.759 20.3171 74.7121 20.3346 74.6535 20.3346V20.3376Z"
+                    fill="#1D1819"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_549_7180">
+                    <rect
+                      width="75.1311"
+                      height="37"
+                      fill="white"
+                      transform="translate(0 0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <!-- component input search -->
+            <div class="mxp-input-search-container">
+              <div class="form-search">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Buscar"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                  />
+                  <div class="input-group-text" id="basic-addon2">
+                    <span class="material-symbols-rounded"> search </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- component options ways search -->
+            <div class="mxp-service-options-ways">
+              <div class="mxp-way-salon">
+                <a href="#" target="" tabindex="">Salon</a>
+              </div>
+              <div class="mxp-way-llevar">
+                <a href="#" target="" tabindex="">Llevar</a>
+              </div>
+              <div class="mxp-way-drive">
+                <a href="#" target="" tabindex="">Drive</a>
+              </div>
+              <div class="mxp-way-delivery">
+                <a href="#" target="" tabindex="">Domicilios</a>
+              </div>
+            </div>
+          </div>
+          <!-- component sessions -->
+          <div class="mxp-sessions">
+            <div class="mxp-AlertasNotificaciones">
+              <span class="material-symbols-rounded">
+                notifications_active
+              </span>
+            </div>
+            <div class="mxp-NombreFechahora">
+              <p class="mxp-nombre">Cajero: Laura Valentina Quiñonez</p>
+              <p class="mxp-FechaHora">13 Octubre 2024 - 12:38 P.M.</p>
+            </div>
+            <div class="mxp-CerrarSesion">
+              <span class="material-symbols-rounded"> power_settings_new </span>
+            </div>
+          </div>
+        </header>
+        <!-- section registro de usuario -->
+        <main class="mxp-section-main-for-two-containers">
+          <!-- left component -->
+          <section class="mxp-component-left-content">
+            <div class="mxp-group-header-content">
+              <button class="mxp-btn mxp-btn-icon-rounded">
+                <em class="material-symbols-rounded">arrow_back</em>
+              </button>
+              <h6>Consulta cliente</h6>
+            </div>
+            <div class="mxp-scroll-content gap-2">
+              <!-- componente tipo de documento -->
+              <div class="mxp-document-type">
+                <p>Tipo de documento</p>
+                <button
+                  class="mxp-btn mxp-btn-secondary py-2 d-flex w-auto align-items-center gap-1"
+                >
+                  Consumidor Final
+                  <em class="material-symbols-rounded">account_circle</em>
+                </button>
+              </div>
+              <!-- componente seguimiento de documento -->
+              <div class="mxp-data-sharing">
+                <div class="mxp-radio-button-form-group">
+                  <input type="radio" id="cedula" />
+                  <label for="cedula" class="mxp-font-family-condensan-medium"
+                    >Cédula / RUC<span class="mxp-radio-button"></span
+                  ></label>
+                </div>
+                <div class="mxp-radio-button-form-group">
+                  <input type="radio" id="pasaporte" />
+                  <label
+                    for="pasaporte"
+                    class="mxp-font-family-condensan-medium"
+                    >Pasaporte<span class="mxp-radio-button"></span
+                  ></label>
+                </div>
+              </div>
+              <!-- componente numero de documento -->
+              <!-- Estado disable del input-field "mxp-field-active" -->
+              <div class="mxp-document-number gap-2">
+                <div class="w-100">
+                  <div class="mxp-field mxp-field-active">
+                    <label
+                      for="input-field"
+                      class="mxp-label-field mxp-font-family-condensan-medium"
+                      >Número de documento</label
+                    >
+                    <input
+                      type="text"
+                      id="input-field"
+                      class="mxp-input-field"
+                      value="337726638"
+                    />
+                  </div>
+                  <p class="mxp-suport-text">
+                    Recuerda que debes completar la cantidad exacta de
+                    carácteres
+                  </p>
+                </div>
+                <div class="pt-2">
+                  <button
+                    class="d-flex justify-content-center align-items-center gap-2 py-2 ps-4"
+                  >
+                    Buscar
+                    <em class="material-symbols-rounded">search</em>
+                  </button>
+                </div>
+              </div>
+              <!-- Estado disable del input-field "mxp-field-disable" -->
+              <div class="mxp-document-number gap-2" style="display: none">
+                <div class="w-100">
+                  <div class="mxp-field mxp-field-disable">
+                    <label
+                      for="input-field"
+                      class="mxp-label-field mxp-font-family-condensan-medium"
+                      >Número de documento</label
+                    >
+                    <input
+                      type="text"
+                      id="input-field"
+                      class="mxp-input-field"
+                      disabled
+                      value="337726638"
+                    />
+                  </div>
+                  <p class="mxp-suport-text">
+                    En este momento NO puedes editar este campo
+                  </p>
+                </div>
+                <button class="mxp-btn mxp-btn-primary">
+                  <em class="material-symbols-rounded">search</em>
+                </button>
+              </div>
+              <!-- componente numero de documento -->
+              <div class="mxp-shared-personal-data">
+                <h6 class="fs-6">¿Desea compartir sus datos personales?</h6>
+                <div class="d-flex gap-2">
+                  <div class="mxp-radio-button-form-group">
+                    <input type="radio" id="no" />
+                    <label for="no" class="mxp-font-family-condensan-medium"
+                      >No<span class="mxp-radio-button"></span
+                    ></label>
+                  </div>
+                  <div class="mxp-radio-button-form-group">
+                    <input type="radio" id="si" />
+                    <label for="si" class="mxp-font-family-condensan-medium"
+                      >Si<span class="mxp-radio-button"></span
+                    ></label>
+                  </div>
+                </div>
+              </div>
+              <!-- componente información cliente -->
+              <div class="mxp-info-customer-field">
+                <div class="w-100">
+                  <div class="mxp-field mxp-field-active">
+                    <label
+                      for="input-field"
+                      class="mxp-label-field mxp-font-family-condensan-medium"
+                      >Nombre completo</label
+                    >
+                    <input
+                      type="text"
+                      id="input-field"
+                      class="mxp-input-field"
+                      value="Jhon Mario Ramirez Quintero"
+                    />
+                  </div>
+                </div>
+                <div class="w-100">
+                  <div class="mxp-field mxp-field-active">
+                    <label
+                      for="input-field"
+                      class="mxp-label-field mxp-font-family-condensan-medium"
+                      >Número de contacto</label
+                    >
+                    <input
+                      type="text"
+                      id="input-field"
+                      class="mxp-input-field"
+                      value="2745638"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- componente email cliente -->
+              <div class="w-100">
+                <div class="mxp-field mxp-field-error">
+                  <label
+                    for="input-field"
+                    class="mxp-label-field mxp-font-family-condensan-medium d-flex align-items-center gap-1"
+                    >Correo electrónico
+                    <em class="material-symbols-rounded fs-6">help</em></label
+                  >
+                  <input
+                    type="text"
+                    id="input-field"
+                    class="mxp-input-field mxp-background-025"
+                    value="jmramirezq@hotmail.co"
+                  />
+                </div>
+                <p class="mxp-suport-text mxp-color-red8">
+                  Se debe agregar un correo válido
+                </p>
+              </div>
+              <!-- componente botones de accion -->
+              <div class="mxp-actions-buttons">
+                <!-- estado boton icon active -->
+                <button
+                  class="mxp-btn mxp-btn-primary d-flex align-items-center px-4"
+                  disabled
+                >
+                  Cambiar cliente
+                  <em class="material-symbols-rounded">person_edit</em>
+                </button>
+                <button class="mxp-btn mxp-btn-primary px-4">Guardar</button>
+              </div>
+            </div>
+          </section>
+          <!-- right -->
+          <section class="mxp-component-right-content">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/assets/img/kfc-image-background.png"
+                    class="d-block w-100 mxp-img-carousel"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item active">
+                  <img
+                    src="/assets/img/kfc-image-background.png"
+                    class="d-block w-100 mxp-img-carousel"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item active">
+                  <img
+                    src="/assets/img/kfc-image-background.png"
+                    class="d-block w-100 mxp-img-carousel"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- background image para cuando no hayan productos -->
+            <!-- <div
+              class="mxp-background-img d-flex flex-column h-100 justify-content-center align-items-center"
+            >
+              <em class="material-symbols-rounded">fastfood</em>
+              <p class="m-0">
+                Estamos experimentando fallas con nuestra conexión a internet,
+                pronto te mostraremos más información de tu interés.
+              </p>
+            </div> -->
+            <!-- fin -->
+          </section>
+        </main>
+        <!-- <footer class="mxp-footer-app">barra inferior Opciones</footer> -->
+      </div>
+    </div>
+    <!-- modal politicas beneficios -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header mxp-modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex justify-content-center gap-2 flex-column"
+          >
+            <div class="d-flex justify-content-center flex-column">
+              <div class="d-flex justify-content-center">
+                <h2 class="mxp-modal-title-scanner">
+                  Ubique el documento de identidad
+                </h2>
+                <h2 class="mxp-modal-title-scanner mxp-color-main-red">
+                  en el lector
+                </h2>
+              </div>
+              <p class="d-flex justify-content-center fs-5 m-0">
+                Aumenta al máximo el brillo de tu pantalla para escanear
+                correctamente
+              </p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <img
+                class="mxp-image-scanner"
+                src="/assets/img/QR_example.png"
+                alt="qr"
+              />
+            </div>
+            <div class="mxp- d-flex justify-content-center">
+              <p class="mxp-scanner-loading m-0">..escaneando..</p>
+            </div>
+            <div
+              class="mxp-document-number gap-2 d-flex justify-content-center"
+            >
+              <div class="mxp-width-field-scanner">
+                <div class="mxp-field mxp-field-active mxp-field-error">
+                  <label
+                    for="input-field"
+                    class="mxp-label-field mxp-font-family-condensan-medium d-flex align-items-center gap-1"
+                    >Número de documento
+                    <em class="material-symbols-rounded fs-6">help</em>
+                  </label>
+                  <input
+                    type="text"
+                    id="input-field"
+                    class="mxp-input-field mxp-background-025"
+                    value="337726638"
+                  />
+                </div>
+                <p class="mxp-suport-text mxp-error-color">
+                  El número de documento no es válido
+                </p>
+              </div>
+              <div class="">
+                <button class="mxp-btn mxp-btn-primary py-3 px-4">
+                  Redimir
+                </button>
+              </div>
+            </div>
+            <div class="mxp-auth-text gap-2">
+              <em class="material-symbols-rounded mxp-error-color"
+                >lock_person</em
+              >
+              <a class="m-0 d-flex align-items-center mxp-error-color fs-6">
+                Requiere autorización del administrador
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

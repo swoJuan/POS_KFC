@@ -1,0 +1,85 @@
+@use "../abstracts/index"as *;
+/*** list component **/
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline-item {
+  display: inline-block;
+}
+.list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+/** lists componentes **/
+.bp-list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  
+    .bp-list-group-item {
+      position: relative;
+      display: block;
+      padding: 0.75rem 1.25rem;
+      margin-bottom: -1px;
+      background-color: $color-white;
+      border: 1px solid $color-grey-border;
+  
+      &.bp-list-group--header {
+        background-color: $color-primary;
+        color: $color-white;
+  
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          color: $color-white;
+        }
+      }
+  
+      &:first-child {
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+  
+      }
+  
+      &:last-child {
+        margin-bottom: 0;
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+      }
+  
+    }
+  }
+  
+  .bp-list-striped--even > li:nth-child(even) {
+    background-color: $color-cyan-table;
+  }
+  .bp-list-striped--odd > li:nth-child(odd) {
+    background-color: $color-cyan-table;
+  }
+  
+  .bp-list-hover > li {
+    &:hover {
+      background-color: $color-cyan-hover;
+    }
+  
+  }
+  
+  .bp-list-style-disc
+  {
+    list-style: disc;
+  }
+  
+  /** end lists componentes **/
+  

@@ -1,0 +1,332 @@
+/*** wizard  ***/
+@use "../abstracts/index"as *;
+
+.wizard-container {
+    text-align: center;
+}
+
+.wizard-mobile {
+    display: none;
+    text-align: center;
+    font-size: 1rem;
+
+    @media screen and (max-width:480px) {
+        display: block;
+    }
+}
+
+.wizard-steps {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: block;
+    overflow-x: auto;
+    font-size: 1rem;
+    text-align: center;
+
+    .wizard-step {
+        margin-bottom: 1rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: auto;
+        }
+
+        &:first-of-type .step-circle::before {
+            display: none;
+        }
+
+        &:last-of-type .step-content {
+            padding-right: 0;
+        }
+    }
+
+
+    .wizard-step-content {
+        box-sizing: content-box;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        text-align: center;
+        width: 10rem;
+        min-width: 10rem;
+        max-width: 10rem;
+
+        .step-text {
+            color: $color-grey-black;
+            /*word-break: break-all;*/
+            margin-top: 0.625rem;
+            font-size: 0.85rem;
+        }
+    }
+
+    .step-circle {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.25rem;
+        height: 2.25rem;
+        color: $color-grey;
+        border: 2px solid $color-grey-border;
+        border-radius: 100%;
+        background-color: $color-white;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}
+
+.wizard-line {
+    .wizard-step {
+        display: inline-block;
+        vertical-align: top;
+
+        .wizard-line {
+            display: none;
+        }
+    }
+
+    .step-circle::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -2px;
+        height: 2px;
+        transform: translate(-100%, -50%);
+        width: calc(10rem + 1rem - 2.25rem);
+        color: $color-grey-border;
+        background-color: currentColor;
+        -webkit-transform: translate(-100%, -50%);
+        -moz-transform: translate(-100%, -50%);
+        -ms-transform: translate(-100%, -50%);
+        -o-transform: translate(-100%, -50%);
+        z-index: -1;
+    }
+
+    @media screen and (max-width:480px) {
+        .wizard-step-content {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .wizard-step-content {
+            width: 5rem;
+            min-width: 5rem;
+            max-width: 5rem;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:992px) {
+        .wizard-step-content {
+            width: 6rem;
+            min-width: 6rem;
+            max-width: 6rem;
+        }
+
+        .step-circle::before {
+            width: calc(6rem + 1rem - 2.25rem);
+        }
+
+    }
+
+    @media screen and (max-width:992px) {
+        .wizard-step-content {
+            width: 6rem;
+            min-width: 6rem;
+            max-width: 6rem;
+        }
+
+        .step-circle::before {
+            width: calc(6rem + 1rem - 2.25rem);
+        }
+
+    }
+
+    @media (min-width: 992px) and (max-width: 1024px) {
+        .wizard-step-content {
+            width: 8rem;
+            min-width: 8rem;
+            max-width: 8rem;
+        }
+
+        .step-circle::before {
+            width: calc(8rem + 1rem - 2.25rem);
+        }
+
+    }
+
+    @media (min-width: 1024px) and (max-width: 1299px) {
+        .wizard-step-content {
+            width: 10rem;
+            min-width: 10rem;
+            max-width: 10rem;
+        }
+
+        .step-circle::before {
+            width: calc(10rem + 1rem - 2.25rem);
+        }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        .wizard-step-content {
+            width: 12rem;
+            min-width: 12rem;
+            max-width: 12rem;
+        }
+
+        .step-circle::before {
+            width: calc(12rem + 1rem - 2.25rem);
+        }
+
+    }
+}
+
+.wizard-vertical {
+    display: inline-block;
+
+    .wizard-step {
+        display: block;
+        position: relative;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .wizard-step-content {
+        padding: 0;
+    }
+
+    .step-circle::before {
+        display: none;
+    }
+
+    .wizard-line {
+        margin-top: 0.5rem;
+        height: 50px;
+        width: 2px;
+        background-color: $color-grey-border;
+        display: inline-block;
+    }
+}
+
+.wizard-no-label.wizard-steps .wizard-step-content .step-text {
+    display: none;
+}
+/** step active **/
+.step-active {
+    .wizard-line{
+        background-color: $color-cyan-active;;
+    }
+    .step-circle {
+        color: $color-white;
+        background-color: $color-cyan-active;
+        border-color: $color-white;
+
+        &::before {
+            color: $color-cyan-active;
+            font-weight: bold;
+        }
+    }
+
+    .step-text {
+        color: $color-secondary;
+    }
+
+}
+
+/** end step active **/
+/** step error **/
+.step-error {
+    .wizard-line{
+        background-color: $color-text-error;
+    }
+    .step-circle {
+        color: $color-text-error;
+        background-color: $color-bg-error;
+        border-color: $color-text-error;
+
+        &::before {
+            color:$color-text-error;
+        }
+    }
+
+    .step-text {
+        color: $color-text-error;
+    }
+}
+
+/** end step error **/
+/** step disabled **/
+.step-disabled {
+    .wizard-line{
+        background-color: $color-border-disabled;
+    }
+    .step-circle {
+        color: $color-text-disabled;
+        background-color: $color-bg-disabled;
+        border-color: $color-border-disabled;
+
+        &::before {
+            color: $color-text-disabled;
+        }
+    }
+
+    .step-text {
+        color: $color-text-disabled;
+    }
+}
+
+/** end step error **/
+/** step success **/
+.step-success {
+    .wizard-line{
+        background-color:  $color-navy-active;
+    }
+    .step-circle {
+        color: $color-white;
+        background-color: $color-navy-active;
+        border-color: $color-navy-active;
+
+        &::before {
+            color: $color-secondary;
+        }
+    }
+
+    .step-text {
+        color: $color-grey-black;
+    }
+}
+
+/** end step success **/
+/** step warning **/
+.step-warning {
+    .wizard-line{
+        background-color: $color-yellow;
+    }
+    .step-circle {
+        color: $color-text-alert;
+        background-color: $color-bg-alert;
+        border-color: $color-yellow;
+
+        &::before {
+            color: $color-text-alert;
+        }
+    }
+
+    .step-text {
+        color: $color-text-alert;
+    }
+}
+
+
+/** end step warning **/
+/*** end wizard  ***/

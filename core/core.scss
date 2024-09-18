@@ -1,0 +1,21 @@
+/***
+** Sistema de diseño de Sanitas
+****/
+
+// **************  Core
+// [description] Contiene todos los archivos necesarios para la personalizacion
+// *****
+@use "normalize" as *;
+
+@use "base" as *;
+@use "utils" as *;
+@use "abstracts" as *;
+
+// **************  Components
+//[description] Contiene todos los estilos para los diferentes componentes
+//*****
+@use "components" as *;
+
+// ************** Pages
+// [description] Contiene todos los estilos para las páginas
+//*****

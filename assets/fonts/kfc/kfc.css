@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "kfc-icons-custom";
+  src: url("kfc-icons-custom.ttf?kqmegx") format("truetype"),
+    url("kfc-icons-custom.woff?kqmegx") format("woff"),
+    url("kfc-icons-custom.svg?kqmegx#kfc-icons-custom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.mxp-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "kfc-icons-custom" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-no_food:before {
+  content: "\e900";
+}
+.icon-logo-kfc-group .path1:before {
+  content: "\e901";
+  color: rgb(29, 24, 25);
+}
+.icon-logo-kfc-group .path2:before {
+  content: "\e902";
+  margin-left: -2em;
+  color: rgb(29, 24, 25);
+}
+.icon-logo-kfc-group .path3:before {
+  content: "\e903";
+  margin-left: -2em;
+  color: rgb(29, 24, 25);
+}
+.icon-logo-kfc-group .path4:before {
+  content: "\e904";
+  margin-left: -2em;
+  color: rgb(29, 24, 25);
+}
+.icon-logo-kfc-group .path5:before {
+  content: "\e905";
+  margin-left: -2em;
+  color: rgb(29, 24, 25);
+}
+.icon-logo-kfc-group .path6:before {
+  content: "\e906";
+  margin-left: -2em;
+  color: rgb(29, 24, 25);
+}
+.icon-logo-kfc-group .path7:before {
+  content: "\e907";
+  margin-left: -2em;
+  color: rgb(29, 24, 25);
+}
+.icon-logo-kfc-group .path8:before {
+  content: "\e908";
+  margin-left: -2em;
+  color: rgb(129, 12, 34);
+}
+.icon-logo-kfc-group .path9:before {
+  content: "\e909";
+  margin-left: -2em;
+  color: rgb(228, 0, 43);
+}
+.icon-logo-kfc-group .path10:before {
+  content: "\e90a";
+  margin-left: -2em;
+  color: rgb(29, 24, 25);
+}
+.icon-logo-kfc-group .path11:before {
+  content: "\e90b";
+  margin-left: -2em;
+  color: rgb(29, 24, 25);
+}
+.icon-logo-kfc-group .path12:before {
+  content: "\e90c";
+  margin-left: -2em;
+  color: rgb(29, 24, 25);
+}
+.icon-logo-kfc-group .path13:before {
+  content: "\e90d";
+  margin-left: -2em;
+  color: rgb(29, 24, 25);
+}
+.icon-logo-kfc-group .path14:before {
+  content: "\e90e";
+  margin-left: -2em;
+  color: rgb(29, 24, 25);
+}

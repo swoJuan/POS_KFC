@@ -1,0 +1,1806 @@
+@charset "UTF-8";
+/* main container */
+.mxp-main-container {
+  display: grid;
+  grid-template-columns: minmax(200px, 240px) 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  gap: var(--sizing-sm);
+}
+
+/* end main container */
+.mxp-right-container,
+.mxp-left-container {
+  -webkit-border-top-right-radius: var(--sizing-sm);
+  -webkit-border-bottom-right-radius: var(--sizing-sm);
+  -moz-border-radius-topright: var(--sizing-sm);
+  -moz-border-radius-bottomright: var(--sizing-sm);
+  border-top-right-radius: var(--sizing-sm);
+  border-bottom-right-radius: var(--sizing-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  margin: 0;
+  padding: 0;
+  gap: var(--sizing-xs);
+}
+
+/* component menus*/
+.mxp-component-menus {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 48px;
+}
+
+/* dropdown*/
+.dropdown {
+  width: 100%;
+  height: 48px;
+}
+.dropdown .btn {
+  align-items: center;
+  background-color: var(--main-colors-white);
+  border: 1px solid var(--gray-scale-gray-4);
+  -webkit-border-radius: var(--sizing-sm);
+  -moz-border-radius: var(--sizing-sm);
+  border-radius: var(--sizing-sm);
+  color: var(--main-colors-black);
+  display: flex;
+  margin: 0 0 0 0;
+  padding: var(--sizing-sm);
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  height: 48px;
+}
+.dropdown .dropdown-menu.show {
+  width: 100%;
+}
+.dropdown .dropdown-item:active {
+  background-color: var(--reds-rojo-025);
+  color: var(--main-colors-black);
+}
+.dropdown .dropdown-menu {
+  width: 100%;
+}
+.dropdown .dropdown-menu .dropdown-item {
+  padding: 0.5em 1em;
+  color: #333333;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: var(--main-colors-rojo-025);
+  text-decoration: none;
+}
+.dropdown .dropdown-menu .active {
+  background-color: var(--main-colors-rojo-025);
+  font-family: "national_2_condensedmedium";
+}
+.dropdown .dropdown-menu .active:hover {
+  background-color: var(--main-colors-rojo-025);
+  text-decoration: none;
+}
+
+/* end dropdown*/
+/* end component menus*/
+/* component user register*/
+.mxp-component-registered-user {
+  align-items: center;
+  background-color: var(--main-colors-white);
+  -webkit-border-radius: var(--sizing-sm);
+  -moz-border-radius: var(--sizing-sm);
+  border-radius: var(--sizing-sm);
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: var(--sizing-xxs) var(--sizing-xs);
+  height: 50px;
+  width: 100%;
+}
+.mxp-component-registered-user .mxp-content-detail-user {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--sizing-xxxs);
+}
+.mxp-component-registered-user .mxp-content-detail-user h6 {
+  font-family: "national_2_condensedmedium";
+  font-size: var(--sizing-md);
+}
+.mxp-component-registered-user .mxp-content-detail-user p {
+  margin: 0;
+  font-family: "national_2_condensedregular";
+  font-size: var(--sizing-md);
+}
+.mxp-component-registered-user .mxp-button-edit-user {
+  background-color: var(--reds-rojo-025);
+  -webkit-border-radius: var(--sizing-md);
+  -moz-border-radius: var(--sizing-md);
+  border-radius: var(--sizing-md);
+  padding: var(--sizing-xxs);
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+  height: 32px;
+}
+.mxp-component-registered-user .mxp-button-edit-user:hover {
+  background-color: var(--main-colors-rojo);
+  color: var(--main-colors-white);
+}
+
+/* end component user register */
+/* component summary order */
+.mxp-component-summary-order {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--main-colors-white);
+  -webkit-border-radius: var(--sizing-sm);
+  -moz-border-radius: var(--sizing-sm);
+  border-radius: var(--sizing-sm);
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--sizing-md);
+  height: 100%;
+  gap: var(--sizing-xs);
+  /* content summary order */
+}
+.mxp-component-summary-order h5 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  height: auto;
+  justify-content: flex-start;
+  border-bottom: 1px solid var(--gray-scale-gray-5);
+  color: var(--gray-scale-dark);
+  font-family: "national_2_condensedmedium";
+  font-size: 1.25em;
+  width: 100%;
+}
+.mxp-component-summary-order .mxp-content-summary-order {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.mxp-component-summary-order .mxp-content-summary-order .mxp-item-sumary-order {
+  margin: 0;
+  height: 100px;
+}
+.mxp-component-summary-order .mxp-content-summary-amount-items-container {
+  align-self: stretch;
+  align-items: center;
+  border-top: 1px solid var(--gray-scale-gray-5);
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.mxp-component-summary-order .mxp-content-summary-amount-items-container .mxp-datosDePago {
+  display: flex;
+  padding: var(--sizing-xs);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.mxp-component-summary-order .mxp-content-summary-amount-items-container .mxp-datosDePago .mxp-SummarySubtotalContainer,
+.mxp-component-summary-order .mxp-content-summary-amount-items-container .mxp-datosDePago .mxp-DiscountContainer,
+.mxp-component-summary-order .mxp-content-summary-amount-items-container .mxp-datosDePago .mxp-TaxContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.mxp-component-summary-order .mxp-content-summary-amount-items-container .mxp-datosDePago .mxp-SummarySubtotalContainer span:first-child,
+.mxp-component-summary-order .mxp-content-summary-amount-items-container .mxp-datosDePago .mxp-DiscountContainer span:first-child,
+.mxp-component-summary-order .mxp-content-summary-amount-items-container .mxp-datosDePago .mxp-TaxContainer span:first-child {
+  font-family: "national_2_condensedmedium";
+}
+.mxp-component-summary-order .mxp-content-summary-amount-items-container .mxp-PayButton {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+}
+
+/* end component summary order */
+/* component main header */
+.mxp-header-app {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--main-colors-white);
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  border-radius: 0.75em;
+  display: flex;
+  height: 52px;
+  justify-content: space-between;
+  padding: 0 0.75em;
+  height: 48px;
+}
+.mxp-header-app .mxp-logo-search-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.mxp-header-app .mxp-logo-search-container .show-side-menu {
+  display: none;
+}
+.mxp-header-app .mxp-logo-search-container .mxp-logo-grupo-kfc {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+.mxp-header-app .mxp-logo-search-container .mxp-input-search-container .form-search {
+  line-height: normal;
+}
+.mxp-header-app .mxp-logo-search-container .mxp-input-search-container .form-search .input-group:focus {
+  outline: 0;
+}
+.mxp-header-app .mxp-logo-search-container .mxp-input-search-container .form-search .input-group .form-control {
+  background-color: var(--main-colors-white);
+  border-right: 0px solid var(--main-colors-white) !important;
+}
+.mxp-header-app .mxp-logo-search-container .mxp-input-search-container .form-search .input-group .form-control:focus {
+  outline: 2px dashed var(--reds-rojo-2) !important;
+}
+.mxp-header-app .mxp-logo-search-container .mxp-input-search-container .form-search .input-group .input-group-text {
+  background-color: var(--main-colors-white);
+  border-left: 0px solid var(--main-colors-white) !important;
+  -webkit-border-top-right-radius: var(--sizing-sm);
+  -webkit-border-bottom-right-radius: var(--sizing-sm);
+  -moz-border-radius-topright: var(--sizing-sm);
+  -moz-border-radius-bottomright: var(--sizing-sm);
+  border-top-right-radius: var(--sizing-sm);
+  border-bottom-right-radius: var(--sizing-sm);
+  color: var(--gray-scale-gray-10);
+  padding: 0 var(--sizing-xs);
+}
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  gap: 2px;
+}
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-salon,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-llevar,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-drive,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-delivery {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-salon a,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-llevar a,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-drive a,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-delivery a {
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  border-radius: 0.75em;
+  color: var(--main-colors-black);
+  margin: 0;
+  padding: 0.75em;
+  transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: "national_2_condensedmedium";
+  text-decoration: none;
+}
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-salon a:hover,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-llevar a:hover,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-drive a:hover,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-delivery a:hover {
+  color: var(--main-colors-rojo);
+  background-color: var(--reds-rojo-05);
+  font-family: "national_2_condensedmedium";
+}
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-salon a,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-llevar a,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-drive a,
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-delivery a {
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  padding-right: 40px;
+}
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-salon a {
+  background-image: url("/assets/img/ico-header/icon_address_type_dine_in_col.png");
+}
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-llevar a {
+  background-image: url("/assets/img/ico-header/icon_address_type_self_pickup_col.png");
+}
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-drive a {
+  background-image: url("/assets/img/ico-header/icon_address_type_drive_thru_col.png");
+}
+.mxp-header-app .mxp-logo-search-container .mxp-service-options-ways .mxp-way-delivery a {
+  background-image: url("/assets/img/ico-header/icon_address_type_delivery_col.png");
+}
+.mxp-header-app .mxp-sessions {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.mxp-header-app .mxp-sessions .mxp-icons-header {
+  display: none;
+  padding: var(--sizing-xxs);
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+}
+.mxp-header-app .mxp-sessions .mxp-AlertasNotificaciones {
+  display: flex;
+  padding: var(--sizing-xxs);
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+}
+.mxp-header-app .mxp-sessions .mxp-AlertasNotificaciones:after {
+  background-color: var(--main-colors-rojo);
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  border-radius: 0.75em;
+  border: 2px solid var(--main-colors-white);
+  content: " ";
+  display: block;
+  height: 12px;
+  left: 16px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 12px;
+  z-index: 1;
+}
+.mxp-header-app .mxp-sessions .mxp-NombreFechahora .mxp-nombre,
+.mxp-header-app .mxp-sessions .mxp-NombreFechahora .mxp-FechaHora {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+.mxp-header-app .mxp-sessions .mxp-NombreFechahora .mxp-nombre {
+  font-family: "national_2_condensedmedium";
+  font-size: 1.1rem;
+}
+.mxp-header-app .mxp-sessions .mxp-NombreFechahora .mxp-FechaHora {
+  font-size: 0.9rem;
+}
+.mxp-header-app .mxp-sessions .mxp-CerrarSesion {
+  background-color: transparent;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  display: flex;
+  padding: var(--sizing-xxs);
+  align-items: flex-start;
+  transform: scale(125%);
+  transition: background-color 0.3s ease-in-out;
+}
+.mxp-header-app .mxp-sessions .mxp-CerrarSesion:hover {
+  background-color: var(--main-colors-rojo);
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  color: var(--main-colors-white);
+}
+
+/* end component main header */
+/*--------------------------------media queries sidebar--------------------------------------*/
+.mxp-colresumen-sideBar {
+  -webkit-border-top-right-radius: 0.75em;
+  -webkit-border-bottom-right-radius: 0.75em;
+  -moz-border-radius-topright: 0.75em;
+  -moz-border-radius-bottomright: 0.75em;
+  border-top-right-radius: 0.75em;
+  border-bottom-right-radius: 0.75em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  margin: 0;
+  padding: 1rem;
+  row-gap: var(--sizing-xs);
+  background-color: var(--altern-colors-blue-blue-grey);
+}
+
+.mxp-container-2.menu-hidden {
+  grid-template-columns: 1fr;
+}
+
+.mxp-container-2.menu-hidden .mxp-colresumen-2 {
+  display: none;
+}
+
+/* component categories */
+.mxp-categoriasMenu {
+  align-items: center;
+  align-self: stretch;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  border-radius: 0.75em;
+  border: 0px solid #000;
+  display: flex;
+  gap: 0.5em;
+  justify-content: space-between;
+  margin: 0;
+  min-height: 50px;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+.mxp-categoriasMenu .mxp-arrow-Izq,
+.mxp-categoriasMenu .mxp-arrow-dcha {
+  display: grid;
+  height: 32px;
+  width: 32px;
+  place-content: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+  color: var(--main-colors-rojo);
+}
+.mxp-categoriasMenu .mxp-arrow-Izq:hover,
+.mxp-categoriasMenu .mxp-arrow-dcha:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.mxp-categoriasMenu .mxp-arrow-Izq {
+  transform: rotate(180deg);
+  left: 10px;
+}
+.mxp-categoriasMenu .mxp-arrow-dcha {
+  right: 10px;
+}
+.mxp-categoriasMenu .mxp-listaCategorias {
+  margin: 0;
+  overflow-x: scroll;
+  padding: 0;
+  width: 100%;
+}
+.mxp-categoriasMenu .mxp-listaCategorias::-webkit-scrollbar {
+  display: none;
+}
+.mxp-categoriasMenu .mxp-listaCategorias ul {
+  display: flex;
+  line-height: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 710px;
+  scroll-behavior: smooth;
+}
+.mxp-categoriasMenu .mxp-listaCategorias ul li {
+  flex: 0 0 auto;
+  margin-right: 4px;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+}
+.mxp-categoriasMenu .mxp-listaCategorias ul li a {
+  background-color: var(--main-colors-rojo-025);
+  border-radius: 0.75em;
+  display: block;
+  margin: 0;
+  padding: 1em;
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--main-colors-rojo);
+}
+.mxp-categoriasMenu .mxp-listaCategorias ul li:hover a {
+  background-color: var(--main-colors-rojo) !important;
+  color: var(--main-colors-white) !important;
+}
+.mxp-categoriasMenu .mxp-listaCategorias ul li.active a {
+  background-color: var(--main-colors-rojo) !important;
+  color: var(--main-colors-white) !important;
+}
+.mxp-categoriasMenu .mxp-listaCategorias ul li.active a:hover {
+  background-color: var(--reds-rojo-7);
+}
+
+/* end component categories */
+/* component footer app */
+.mxp-footer-app {
+  align-items: center;
+  background-color: var(--main-colors-white);
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  border-radius: 0.75em;
+  display: flex;
+  height: 64px;
+  max-height: 80px;
+  padding: 0px var(--sizing-lg);
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+}
+
+/* end component footer app */
+/*---------------------------------------end-------------------------------*/
+.mxp-icon-button {
+  border: none;
+  display: flex;
+  border-radius: 50%;
+  padding: 4px 4px;
+}
+
+/*------- component tag ---------*/
+.mxp-tag {
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  border-radius: 0.75em;
+  line-height: normal;
+  font-family: "national_2_condensedmedium";
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0.2rem 0.5rem;
+}
+
+.color-tag-rojo {
+  background-color: var(--reds-rojo-025);
+  color: var(--reds-rojo-8);
+}
+
+.color-tag-amarillo {
+  background-color: var(--altern-colors-yellow-yellow-1);
+  color: var(--altern-colors-yellow-yellow-9);
+}
+
+.color-tag-gris {
+  background-color: var(--gray-scale-gray-2);
+  color: var(--gray-scale-gray-14);
+}
+
+.color-tag-verde {
+  background-color: var(--altern-colors-green-green-05);
+  color: var(--altern-colors-green-green-9);
+}
+
+/*------- end component tag ---------*/
+h6 {
+  font-family: "national_2_condensedmedium";
+}
+
+textarea {
+  width: 100%;
+  display: flex;
+  min-height: 72px;
+  padding: var(--Sizing-md, 16px) var(--Sizing-sm, 12px);
+  align-items: flex-start;
+  gap: var(--Sizing-xs, 8px);
+  align-self: stretch;
+  border-radius: var(--Sizing-xs, 8px);
+  border: var(--Slider-K, 1px) solid var(--Gray-Scale-Gray-3, #dfdede);
+  background: var(--Main-Colors-White, #fff);
+}
+textarea::placeholder {
+  color: var(--gray-scale-gray-13) !important;
+  /* POS/action/xs/Regular */
+  font-family: "national_2_condensedregular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mxp-accordion {
+  --bs-accordion-color: var(--bs-body-color);
+  --bs-accordion-bg: var(--bs-body-bg);
+  --bs-accordion-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-btn-icon-transform: rotate(-180deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.mxp-accordion .mxp-accordion-item .mxp-border-buttom-dashed {
+  border-bottom: 1px dashed var(--gray-scale-gray-6);
+}
+
+.mxp-button-icon-collapse {
+  display: flex;
+  padding: var(--sizing-xxxs, 2px);
+  align-items: center;
+  gap: var(--sizing-xxxs, 2px);
+  border-radius: var(--sizing-xl, 32px);
+  border: 1px solid var(--gray-scale-gray-2);
+  background: var(--main-colors-rojo-025);
+}
+.mxp-button-icon-collapse em {
+  color: var(--main-colors-rojo);
+  width: 24px;
+  height: 24px;
+}
+
+.mxp-button-icon {
+  display: flex;
+  padding: var(--sizing-xxxs, 2px);
+  align-items: center;
+  gap: var(--sizing-xxxs, 2px);
+  border-radius: var(--sizing-xl, 32px);
+  border: 1px solid var(--gray-scale-gray-2);
+  background-color: var(--main-colors-rojo);
+}
+.mxp-button-icon em {
+  color: var(--main-colors-white);
+  width: 24px;
+  height: 24px;
+}
+
+.mxp-carousel-control-next,
+.mxp-carousel-control-prev {
+  display: flex;
+  padding: var(--sizing-xxxs, 2px);
+  align-items: center;
+  gap: var(--sizing-xxxs, 2px);
+  border-radius: var(--sizing-xl, 32px);
+  border: 1px solid var(--gray-scale-gray-2);
+  background-color: var(--main-colors-rojo-025);
+}
+.mxp-carousel-control-next em,
+.mxp-carousel-control-prev em {
+  color: var(--main-colors-black);
+  width: 24px;
+  height: 24px;
+}
+
+.mxp-buttom-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.mxp-section-comment {
+  border-radius: var(--sizing-xs);
+  border: var(--Slider-K, 1px) solid var(--Gray-Scale-Gray-3, #dfdede);
+  background: var(--Main-Colors-White, #fff);
+}
+
+.mxp-section-sum {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+.mxp-section-sum .mxp-section-sum-content {
+  display: flex;
+  padding: var(--sizing-xxxs);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  border-radius: var(--sizing-xl);
+  border: 1px solid var(--gray-scale-gray-2);
+  background: var(--main-colors-white, #fff);
+}
+.mxp-section-sum .mxp-section-sum-content .mxp-button-icon {
+  display: flex;
+  padding: var(--sizing-xxxs, 2px);
+  align-items: center;
+  gap: var(--sizing-xxxs, 2px);
+  border-radius: var(--sizing-xl, 32px);
+  border: 1px solid var(--gray-scale-gray-2);
+  background: var(--main-colors-rojo);
+}
+.mxp-section-sum .mxp-section-sum-content .mxp-button-icon em {
+  color: var(--main-colors-white);
+  width: 24px;
+  height: 24px;
+}
+.mxp-section-sum .mxp-section-sum-content .mxp-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.mxp-section-sum .mxp-section-sum-content .mxp-counter p {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mxp-section-sum .mxp-section-sum-content .mxp-counter input {
+  margin: 0;
+  height: 32px;
+  width: 32px;
+  padding: 4px;
+  text-align: center;
+  border-radius: var(--sizing-xxs);
+  background: var(--kfc-off-white);
+  background-color: var(--kfc-off-white) !important;
+  border: none !important;
+}
+
+/*------------------------------------------------------------------------------------*/
+.mxp-scroll-content {
+  align-items: start;
+  align-self: stretch;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  justify-content: start;
+  overflow: auto;
+  height: 100%;
+  padding: 0 4px 0 0;
+}
+
+.mxp-component-calculator,
+.mxp-component-payment-options,
+.mxp-component-payment-detail,
+.mxp-section-billing {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--main-colors-white);
+  border: 0px solid var(--main-colors-black);
+  border-radius: 0.75em;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1em;
+  height: 100%;
+}
+.mxp-component-calculator h6,
+.mxp-component-payment-options h6,
+.mxp-component-payment-detail h6,
+.mxp-section-billing h6 {
+  font-family: "national_2_condensedmedium";
+  font-size: 16px;
+}
+.mxp-component-calculator .mxp-title-billing,
+.mxp-component-payment-options .mxp-title-billing,
+.mxp-component-payment-detail .mxp-title-billing,
+.mxp-section-billing .mxp-title-billing {
+  color: var(--Gray-Scale-Dark, #1d1819);
+  font-family: "national_2_condensedmedium";
+  font-size: 20px;
+}
+.mxp-component-calculator .mxp-billing-content,
+.mxp-component-payment-options .mxp-billing-content,
+.mxp-component-payment-detail .mxp-billing-content,
+.mxp-section-billing .mxp-billing-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 16px;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options,
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-detail,
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-detail,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-detail,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-detail,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator {
+  border-radius: 0;
+  padding: 0;
+  position: relative;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator h6,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator h6,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator h6,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator h6 {
+  text-align: center;
+  font-family: "national_2_condensedmedium";
+  font-size: 16px;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .mxp-section-dropdown-calculator,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .mxp-section-dropdown-calculator,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .mxp-section-dropdown-calculator,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .mxp-section-dropdown-calculator {
+  border-radius: 8px;
+  border: 1px solid var(--Gray-Scale-Gray-5, #c9c8c8);
+  background: var(--KFC-Off-White, #faf7f3);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown {
+  height: auto;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle {
+  white-space: nowrap;
+  border: none;
+  background-color: var(--kfc-off-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle label,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle label,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle label,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle label {
+  font-size: 14px;
+  font-family: "national_2_condensedregular";
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle span,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle span,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle span,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle span {
+  font-family: "national_2_condensedregular";
+  font-weight: 300;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle em,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle em,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle em,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .mxp-dropdown-toggle em {
+  padding: 2px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--Sizing-xl, 32px);
+  background: var(--reds-rojo-025, #f9e7ea);
+  color: var(--reds-rojo-8);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu {
+  border-radius: 0;
+  height: 200px;
+  overflow: auto;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-paid,
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-payments,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-paid,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-payments,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-paid,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-payments,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-paid,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-payments {
+  padding: 4px;
+  border-radius: var(--Sizing-xl, 32px);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-paid,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-paid,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-paid,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-paid {
+  background-color: var(--altern-colors-orange-orange-2);
+  color: var(--altern-colors-orange-orange-6);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-payments,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-payments,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-payments,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li .mxp-icon-payments {
+  background-color: var(--altern-colors-green-green-05);
+  color: var(--altern-colors-green-green-7);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li em,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li em,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li em,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li em {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li:last-child,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li:last-child,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li:last-child,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu li:last-child {
+  border-bottom: none;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu .dropdown-item,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu .dropdown-item,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu .dropdown-item,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed var(--gray-scale-gray-6);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu .dropdown-item:active,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu .dropdown-item:active,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu .dropdown-item:active,
+.mxp-section-billing .mxp-billing-content .mxp-component-calculator .dropdown .dropdown-menu .dropdown-item:active {
+  background-color: var(--main-colors-rojo-025);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options {
+  /* lista de formas de pago*/
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq,
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-arrow-dcha,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-arrow-dcha,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-arrow-dcha,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-arrow-dcha {
+  display: grid;
+  height: 32px;
+  width: 32px;
+  place-content: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq:hover,
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-arrow-dcha:hover,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq:hover,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-arrow-dcha:hover,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq:hover,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-arrow-dcha:hover,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq:hover,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-arrow-dcha:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-arrow-Izq {
+  transform: rotate(180deg);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options {
+  margin: 0;
+  overflow-x: scroll;
+  padding: 0;
+  width: 100%;
+  outline: none;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options::-webkit-scrollbar,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options::-webkit-scrollbar,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options::-webkit-scrollbar,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options::-webkit-scrollbar {
+  display: none;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options .nav,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options .nav,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options .nav,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options .nav {
+  flex-wrap: nowrap;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link {
+  padding: var(--sizing-md) var(--sizing-sm);
+  border-radius: var(--sizing-sm) var(--sizing-sm) var(--slider-K, 0px) var(--Slider-K, 0px);
+  color: var(--gray-scale-gray-2);
+  text-decoration: none;
+  color: #332e2f;
+  font-family: "national_2_condensedregular";
+  font-size: 14px;
+  border-bottom: 2px solid var(--Gray-Scale-Gray-2, #e9e9e9);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link:hover,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link:hover,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link:hover,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link:hover {
+  background: var(--Gray-Scale-Gray-1, #f6f6f6);
+  border-bottom: 2px solid var(--reds-rojo-6);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link:focus,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link:focus,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link:focus,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link:focus {
+  outline: none;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link.active,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link.active,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link.active,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options a.nav-link.active {
+  border-bottom: 2px solid var(--reds-rojo-6);
+  background: var(--Gray-Scale-Gray-1, #f6f6f6);
+  font-family: "national_2_condensedmedium";
+  color: var(--reds-rojo-6);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options ul,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options ul,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options ul,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options ul {
+  display: flex;
+  line-height: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  scroll-behavior: smooth;
+  padding: 0 2px;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options ul li,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options ul li,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options ul li,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options .mxp-taps-payment-options ul li {
+  flex: 0 0 auto;
+  margin-right: 2px;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-options ul,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-options ul,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-options ul,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-options ul {
+  list-style: none;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-detail,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-detail,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-detail,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-detail {
+  gap: 4px;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-detail .mxp-header-payment-detail,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-detail .mxp-header-payment-detail,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-detail .mxp-header-payment-detail,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-detail .mxp-header-payment-detail {
+  display: flex;
+  padding: 8px 4px;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: var(--Slider-K, 1px) solid var(--Gray-Scale-Gray-3, #dfdede);
+  background: var(--Gray-Scale-Gray-1, #f6f6f6);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-detail .mxp-header-payment-detail p,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-detail .mxp-header-payment-detail p,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-detail .mxp-header-payment-detail p,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-detail .mxp-header-payment-detail p {
+  font-size: 18px;
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-detail .mxp-section-need-pay,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-detail .mxp-section-need-pay,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-detail .mxp-section-need-pay,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-detail .mxp-section-need-pay {
+  background-color: var(--main-colors-rojo-025);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-detail .mxp-section-need-pay p,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-detail .mxp-section-need-pay p,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-detail .mxp-section-need-pay p,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-detail .mxp-section-need-pay p {
+  color: var(--reds-rojo-6);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-detail .mxp-section-total-pay,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-detail .mxp-section-total-pay,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-detail .mxp-section-total-pay,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-detail .mxp-section-total-pay {
+  background-color: var(--altern-colors-blue-blue-1);
+}
+.mxp-component-calculator .mxp-billing-content .mxp-component-payment-detail .mxp-section-payments-made .maxp-section-cash,
+.mxp-component-payment-options .mxp-billing-content .mxp-component-payment-detail .mxp-section-payments-made .maxp-section-cash,
+.mxp-component-payment-detail .mxp-billing-content .mxp-component-payment-detail .mxp-section-payments-made .maxp-section-cash,
+.mxp-section-billing .mxp-billing-content .mxp-component-payment-detail .mxp-section-payments-made .maxp-section-cash {
+  background-color: var(--gray-scale-gray-1);
+}
+
+.mxp-container-pay {
+  border-radius: 8px;
+  padding: var(--sizing-xs);
+  display: flex;
+  justify-content: space-between;
+}
+.mxp-container-pay p {
+  font-family: "national_2_condensedmedium";
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.mxp-container-pay-dashed {
+  display: flex;
+  padding: var(--sizing-xs);
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--Gray-Scale-Gray-3, #dfdede);
+  /* util font condensedmedium */
+}
+.mxp-container-pay-dashed p,
+.mxp-container-pay-dashed .mxp-font-condensedmedium {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.mxp-container-pay-dashed p {
+  font-family: "national_2_condensedregular";
+}
+.mxp-container-pay-dashed .mxp-font-condensedmedium {
+  font-family: "national_2_condensedmedium";
+}
+
+/* component keyboar */
+.mxp-keyboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "one two three" "one two three" "one two three" "one two three" "delete delete delete";
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2px;
+}
+.mxp-keyboard .mxp-key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  font-size: 24px;
+  border-radius: 5px;
+  background: var(--Altern-Colors-Blue-Blue-Grey, #ecedf5);
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.35) !important;
+  font-weight: normal;
+  font-family: "national_2_condensedregular";
+  padding: 4px 0px;
+  min-height: 40px;
+  max-height: 50px;
+}
+.mxp-keyboard .mxp-key:focus {
+  outline: 2px solid var(--transparent-colors-rojo-50t);
+}
+.mxp-keyboard .mxp-key-backspace {
+  border-radius: 5px;
+  border-bottom: 1px solid var(--Reds-Rojo-7, #a20825);
+  background: var(--kfc-red);
+  color: var(--main-colors-white);
+}
+
+.mxp-key-delete {
+  grid-area: delete;
+}
+
+/*--------------------------------------------------*/
+.mxp-content-methods-pay-icons {
+  background-color: var(--Reds-Rojo-025, #f9e7ea);
+  border-radius: 48px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--reds-rojo-6);
+}
+
+.mxp-content-methods-pay-icons-small {
+  background-color: var(--Reds-Rojo-025, #f9e7ea);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--reds-rojo-6);
+  height: 20px;
+  width: 20px;
+  font-size: 14px;
+  padding: var(--sizing-xxxs);
+}
+
+.mxp-border-bottom-dashed {
+  border-bottom: 1px dashed var(--gray-scale-gray-6) !important;
+}
+
+.mxp-border-bottom-solid {
+  border-bottom: 1px solid var(--Gray-Scale-Gray-2, #e9e9e9);
+}
+
+.mxp-gap-2px {
+  display: flex;
+  gap: var(--sizing-xxxs);
+}
+
+/* modal alert confirmation */
+.mxp-modal-alert-content {
+  padding: var(--sizing-sm);
+  border-radius: var(--Sizing-xs, 8px);
+  border: var(--Slider-Product-Item, 1px) solid var(--Gray-Scale-Gray-6, #bebdbd);
+  background: var(--Main-Colors-White, #fff);
+  border-top: 4px solid var(--Reds-Rojo-7, #a20825);
+  width: 336px;
+  height: 192px;
+}
+.mxp-modal-alert-content .mxp-modal-alert-body {
+  padding: 0;
+}
+.mxp-modal-alert-content .mxp-modal-alert-body em {
+  color: var(--reds-rojo-6);
+}
+.mxp-modal-alert-content .mxp-modal-alert-footer {
+  padding: 0;
+  border-top: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------------------- section cash payment process */
+/* --------------------------------- Item order --------------------------------- */
+.mxp-OrderListItemsContainer {
+  align-self: stretch;
+  border: 0px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 2px;
+}
+.mxp-OrderListItemsContainer ul,
+.mxp-OrderListItemsContainer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.mxp-OrderListItemsContainer ul {
+  padding: 8px;
+  border-radius: 8px;
+  background: #fff;
+}
+.mxp-OrderListItemsContainer li {
+  border-bottom: 1px solid #aaa;
+  overflow: hidden;
+}
+.mxp-OrderListItemsContainer li:last-child {
+  border-bottom: none;
+}
+
+.mxp-ItemLista_producto-ordenar {
+  border: 0px solid transparent;
+  color: var(--gray-scale-dark);
+  margin: 0 0 1px 0;
+  padding: 0.5rem 2px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+}
+.mxp-ItemLista_producto-ordenar.active {
+  background-color: var(--gray-scale-gray-1);
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
+}
+.mxp-ItemLista_producto-ordenar .mxp-tag-cupon {
+  background-color: var(--altern-colors-teal-teal-1);
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  color: var(--altern-colors-teal-teal-8);
+  display: block;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0.18rem 0.3rem;
+  position: absolute;
+  right: 45.14px;
+  top: 4px;
+  z-index: 1;
+}
+
+.mxp-contenedor-producto {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 32px 1fr auto 32px;
+  grid-template-rows: 1fr;
+  place-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0.2rem 0.01rem 0.2rem 0.1rem;
+  width: 100%;
+}
+.mxp-contenedor-producto .mxp-cantidades-prodto {
+  background-color: var(--gray-scale-gray-3);
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
+  display: grid;
+  flex-direction: column;
+  font-family: "national_2_condensedmedium";
+  font-size: 1.2rem;
+  height: 32px;
+  place-content: center;
+  width: 32px;
+}
+.mxp-contenedor-producto .mxp-info-prodto {
+  margin: 0;
+  padding: 0;
+}
+.mxp-contenedor-producto .mxp-info-prodto .mxp-nombre-plu {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  border: 1px solid transparent;
+  color: var(--gray-scale-dark);
+  display: -webkit-box;
+  font-family: "national_2_condensedmedium";
+  font-size: 1.2rem;
+  line-height: normal;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.mxp-contenedor-producto .mxp-info-prodto .mxp-descripcion-plu {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  border: 1px solid transparent;
+  color: var(--gray-scale-gray-15);
+  display: -webkit-box;
+  font-family: "national_2_condensedregular";
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.mxp-contenedor-producto .mxp-info-prodto .mxp-carga-tag-menu {
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0.18rem 0.3rem;
+  right: 10%;
+  top: 0;
+  width: fit-content;
+  z-index: 1;
+}
+.mxp-contenedor-producto .mxp-precio-item-prodto {
+  color: var(--main-colors-black);
+  font-size: 1rem;
+  font-family: "national_2_condensedmedium";
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 100%;
+}
+.mxp-contenedor-producto .mxp-icono-borrar-item {
+  align-items: center;
+  color: var(--main-colors-rojo);
+  display: grid;
+  justify-items: center;
+  place-content: center;
+  height: 32px;
+  width: 32px;
+}
+.mxp-contenedor-producto .mxp-icono-borrar-item span {
+  font-size: 1.4rem;
+}
+
+/* ------------------------ touch swip buttons ------------------------- */
+/* SWIPE */
+.swipe-container {
+  position: relative;
+  background-color: #eee;
+}
+
+.reveal-left,
+.reveal-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.reveal-left {
+  background-color: var(--altern-colors-blue-blue);
+  text-align: left;
+  left: 0;
+}
+.reveal-left button {
+  background-color: var(--altern-colors-blue-blue);
+  color: var(--main-colors-white);
+}
+
+.reveal-right {
+  background-color: var(--kfc-red);
+  right: 0;
+  text-align: right;
+  flex-direction: row-reverse;
+}
+.reveal-right button {
+  background-color: var(--kfc-red);
+  color: var(--main-colors-white);
+}
+
+.swipe-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: white;
+  z-index: 2;
+  user-select: none;
+}
+
+.swipe-item > button,
+.swipe-item > span {
+  padding: 8px;
+  font-size: inherit;
+}
+
+.swipe-item > button {
+  margin: 0 8px;
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+
+.swipe-item > span {
+  flex: 1;
+}
+
+/* ---------------------- Utilidad main con 2 contenedores -------------------- */
+.mxp-section-main-for-two-containers {
+  align-items: flex-start;
+  align-self: stretch;
+  border: 0px solid var(--main-colors-black);
+  border-radius: 0.75em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex: 1 0 0;
+  justify-content: flex-start;
+  height: 100%;
+  gap: var(--sizing-xs);
+}
+.mxp-section-main-for-two-containers .mxp-component-left-content,
+.mxp-section-main-for-two-containers .mxp-component-right-content {
+  background-color: var(--main-colors-white);
+  border-radius: 0.75em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  margin: 0;
+  padding: var(--sizing-md);
+  gap: var(--sizing-xs);
+}
+.mxp-section-main-for-two-containers .mxp-component-left-content {
+  gap: var(--sizing-xs);
+}
+.mxp-section-main-for-two-containers .mxp-component-left-content h6 {
+  font-family: "national_2_condensedmedium";
+  font-size: 20px;
+}
+.mxp-section-main-for-two-containers .mxp-component-left-content .mxp-font-family-condensan-medium {
+  font-family: "national_2_condensedmedium";
+}
+.mxp-section-main-for-two-containers .mxp-component-right-content {
+  gap: var(--sizing-xs);
+}
+.mxp-section-main-for-two-containers .mxp-component-right-content h6 {
+  font-family: "national_2_condensedmedium";
+  font-size: 20px;
+}
+
+.mxp-btn-icon-rounded {
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* section register user for payment */
+.mxp-component-left-content {
+  display: flex;
+  flex-direction: column;
+}
+.mxp-component-left-content .mxp-group-header-content {
+  display: flex;
+  padding-bottom: var(--sizing-xs);
+  align-items: flex-end;
+  gap: var(--sizing-xs);
+  align-self: stretch;
+  border-bottom: 1px dashed var(--gray-scale-gray-6);
+}
+.mxp-component-left-content .mxp-group-header-content .mxp-btn-icon-rounded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  padding: 0 12px;
+  background-color: transparent;
+}
+.mxp-component-left-content .mxp-document-type {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mxp-component-left-content .mxp-document-type p {
+  color: var(--gray-scale-gray-13);
+  font-size: 16px;
+  margin: 0 #f0f0f0;
+  margin: 0;
+}
+.mxp-component-left-content .mxp-data-sharing {
+  display: flex;
+  gap: 4px;
+  height: var(--sizing-xxxl);
+  align-items: center;
+}
+.mxp-component-left-content .mxp-document-number {
+  display: flex;
+  width: 100%;
+}
+.mxp-component-left-content .mxp-document-number button {
+  margin: 0;
+  border-radius: 46px;
+  border: none;
+  padding-right: 12px;
+  background-color: var(--main-colors-rojo);
+  color: var(--main-colors-white);
+  font-size: 18px;
+}
+.mxp-component-left-content .mxp-shared-personal-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mxp-component-left-content .mxp-shared-personal-data h6 {
+  color: var(--Gray-Scale-Gray-13, #737071);
+}
+.mxp-component-left-content .mxp-info-customer-field {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--sizing-xs);
+}
+.mxp-component-left-content .mxp-actions-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 64px;
+}
+
+.mxp-background-img {
+  width: 100%;
+}
+.mxp-background-img em {
+  font-size: 66px;
+  color: var(--gray-scale-gray-6);
+}
+.mxp-background-img p {
+  width: 266px;
+  color: var(--gray-scale-gray-6);
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+}
+
+/* Ajusta el contenedor de la imagen para que tenga una altura fija */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Ajusta la altura según sea necesario */
+  padding-bottom: 16px;
+}
+
+/* Asegúrate de que la imagen se ajuste al contenedor */
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Ocupa el 100% del alto del contenedor */
+}
+
+.mxp-img-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  height: 100%; /* Ocupa el 100% del alto del contenedor */
+  object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: var(--Gray-Scale-Gray-3, #dfdede);
+  border: none;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: var(--main-colors-rojo);
+}
+
+.mxp-font-family-condensan-medium {
+  font-family: "national_2_condensedmedium";
+}
+
+/* ----------------- radio-button in core folder --------------------- */
+.mxp-field {
+  display: flex;
+  min-height: 56px;
+  padding: var(--Sizing-xs, 8px) var(--Sizing-sm, 12px);
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2px;
+  align-self: stretch;
+  width: 100%;
+}
+.mxp-field .mxp-input-field {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  width: 100%;
+}
+.mxp-field .mxp-input-field:focus {
+  outline: none;
+}
+.mxp-field .mxp-input-field:disabled {
+  background: var(--Gray-Scale-Gray-1, #f6f6f6);
+}
+
+.mxp-field-active {
+  border-radius: var(--Sizing-xs, 8px);
+  border: 1px solid var(--Gray-Scale-Gray-16, #534f50);
+  background: var(--Main-Colors-White, #fff);
+}
+
+.mxp-field-disable {
+  border-radius: var(--Sizing-xs, 8px);
+  border: 1px solid var(--Gray-Scale-Gray-3, #dfdede);
+  background: var(--Gray-Scale-Gray-1, #f6f6f6);
+}
+
+.mxp-field-error {
+  border-radius: var(--Sizing-xs, 8px);
+  border: 1px solid var(--Reds-Rojo-8, #810c22);
+  background: var(--Reds-Rojo-025, #f9e7ea);
+}
+
+.mxp-suport-text {
+  margin: 0;
+  color: var(--Gray-Scale-Gray-10, #939191);
+  padding: var(--Sizing-xxs, 4px) var(--Sizing-xs, 8px);
+}
+
+.mxp-color-red8 {
+  color: var(--Reds-Rojo-8, #810c22) !important;
+}
+
+.mxp-background-025 {
+  background-color: var(--Reds-Rojo-025, #f9e7ea) !important;
+}
+
+/* botones de acepta compartir datos agregar beneficio */
+.mxp-btn-group {
+  padding: 4px 0;
+  border-radius: 32px;
+  height: 36px;
+}
+
+.mxp-btn-group-primary {
+  background-color: var(--main-colors-rojo);
+}
+
+.mxp-btn-group-disable {
+  border-radius: var(--Sizing-xl, 32px);
+  border: 1px solid var(--Gray-Scale-Gray-7, #b4b2b2);
+  background: var(--Main-Colors-White, #fff);
+  color: var(--gray-scale-gray-12);
+}
+
+.mxp-btn-left-group {
+  border: 0;
+  padding: 4px 16px 4px 24px;
+  background-color: transparent;
+  border-right: 1px solid var(--main-colors-white);
+  color: var(--main-colors-white);
+}
+.mxp-btn-left-group:disabled {
+  color: var(--gray-scale-gray-12);
+  border-right: 1px solid var(--main-colors-black);
+}
+
+.mxp-btn-right-group {
+  color: var(--main-colors-white);
+  border: 0;
+  background-color: transparent;
+  padding: 0 16px 0 8px;
+}
+.mxp-btn-right-group:disabled {
+  color: var(--gray-scale-gray-12);
+}
+
+.dropdown-toggle::after {
+  content: "keyboard_arrow_down";
+  font-family: "Material Symbols Rounded";
+  border: none;
+  height: 24px;
+  width: 24px;
+  font-size: 24px;
+}
+
+/* modal lector de codigos */
+.mxp-modal-header {
+  border-top: var(--p4-paso-end, 3px) solid var(--Reds-Rojo-6, #c30428);
+  border-bottom: none;
+}
+
+/* title modal scanner*/
+.mxp-modal-title-scanner {
+  font-family: "national_2_condensedmedium";
+  margin-right: 4px;
+}
+
+.mxp-color-main-red {
+  color: var(--main-colors-rojo);
+}
+
+.mxp-image-scanner {
+  width: 146px;
+  height: 162px;
+}
+
+.mxp-scanner-loading {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--gray-scale-gray-4);
+}
+
+.mxp-width-field-scanner {
+  min-width: 296px;
+}
+
+.mxp-error-color {
+  color: var(--main-colors-rojo);
+}
+
+.mxp-auth-text {
+  display: flex;
+  position: relative;
+  left: 176px;
+}

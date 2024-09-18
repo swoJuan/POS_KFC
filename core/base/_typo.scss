@@ -1,0 +1,95 @@
+@use "../abstracts/index" as *;
+
+
+/** CSS Typography **/
+/** 
+* heading typography
+* [description]
+ * Heading 1: 32px
+ * Heading 2: 28px
+ * Heading 3: 24px
+ * Heading 4: 20px
+ * Heading 5: 18px
+ * Heading 6: 16px
+**/
+
+/* Text Styles  */
+.mxp-h1,
+.mxp-h2,
+.mxp-h3,
+.mxp-h4,
+.mxp-h5,
+.mxp-h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  font-family: $font-national2Condensed;
+  line-height: normal;
+  letter-spacing: 0%;
+  font-weight: 500;
+  color: var(--gray-scale-dark);
+}
+
+.mxp-h1 {
+  font-size: 2rem;
+}
+
+.mxp-h2 {
+  font-size: 1.75rem;
+}
+
+.mxp-h3 {
+  font-size: 1.5rem;
+}
+
+.mxp-h4 {
+  font-size: 1.25rem;
+}
+
+.mxp-h5 {
+  font-size: 1.125rem;
+}
+
+.mxp-h6 {
+  font-size: 1rem;
+}
+
+
+p {
+  color: var(--gray-scale-dark);
+  line-height: 120%;
+  font-size: $main-font-size;
+  margin: 0;
+  padding: 0;
+}
+
+
+small {
+  font-size: 0.75em;
+}
+
+
+a {
+  color: var(--main-colors-rojo);
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--reds-rojo-7);
+    text-decoration: underline;
+  }
+}
+
+a:hover {
+  color: var(--main-colors-rojo);
+  text-decoration: underline;
+}
+
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
