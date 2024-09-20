@@ -540,53 +540,10 @@ html,
  * Heading 6: 16px
 **/
 /* Text Styles  */
-.mxp-h1,
-.mxp-h2,
-.mxp-h3,
-.mxp-h4,
-.mxp-h5,
-.mxp-h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "National 2 Condensed", sans-serif;
-  line-height: normal;
-  letter-spacing: 0%;
-  font-weight: 500;
-  color: var(--gray-scale-dark);
-}
-
-.mxp-h1 {
-  font-size: 2rem;
-}
-
-.mxp-h2 {
-  font-size: 1.75rem;
-}
-
-.mxp-h3 {
-  font-size: 1.5rem;
-}
-
-.mxp-h4 {
-  font-size: 1.25rem;
-}
-
-.mxp-h5 {
-  font-size: 1.125rem;
-}
-
-.mxp-h6 {
-  font-size: 1rem;
-}
-
 p {
   color: var(--gray-scale-dark);
   line-height: 120%;
-  font-size: 16px;
+  font-size: 1.125rem;
   margin: 0;
   padding: 0;
 }
@@ -615,7 +572,8 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-/* Estilos de fuente */ /* Estilos de fuente */
+/* Estilos de fuente */
+/* Estilos de fuente */
 .font-thin {
   font-weight: 100;
 }
@@ -629,7 +587,8 @@ a:not([href]):not([class]):hover {
 }
 
 .font-regular {
-  font-weight: 400; /* Normal */
+  font-weight: 400;
+  /* Normal */
 }
 
 .font-medium {
@@ -704,6 +663,308 @@ a:not([href]):not([class]):hover {
   font-size: 3rem;
 }
 
+.pantallas-k .mp-h1,
+.pantallas-k h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .mp-h2,
+.pantallas-k h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .mp-h3,
+.pantallas-k h3 {
+  font-size: 3.5rem;
+  font-weight: medium;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .mp-h4,
+.pantallas-k h4 {
+  font-size: 3rem;
+  font-weight: medium;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .mp-h5,
+.pantallas-k h5 {
+  font-size: 2.5rem;
+  font-weight: medium;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .mp-h6,
+.pantallas-k h6 {
+  font-size: 2rem;
+  font-weight: medium;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .title-xl {
+  font-size: 4.5rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .title-lg {
+  font-size: 4rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .title-md {
+  font-size: 3.5rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .title-sm {
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .title-xs {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .title-xxs {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .action-xl {
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .action-lg {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .action-md {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .action-sm {
+  font-size: 1.75rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .action-xs {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .action-xxs {
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pantallas-k .body-xl {
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+.pantallas-k .body-lg {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+.pantallas-k .body-md {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+.pantallas-k .body-sm {
+  font-size: 1.75rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+.pantallas-k .body-xs {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+.pantallas-k .body-xxs {
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+
+.pos .mp-h1,
+.pos h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .mp-h2,
+.pos h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .mp-h3,
+.pos h3 {
+  font-size: 2rem;
+  font-weight: medium;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .mp-h4,
+.pos h4 {
+  font-size: 1.75rem;
+  font-weight: medium;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .mp-h5,
+.pos h5 {
+  font-size: 1.5rem;
+  font-weight: medium;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .mp-h6,
+.pos h6 {
+  font-size: 1.25rem;
+  font-weight: medium;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .title-xl {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .title-lg {
+  font-size: 2.25rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .title-md {
+  font-size: 2rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .title-sm {
+  font-size: 1.75rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .title-xs {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .title-xxs {
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .action-xl {
+  font-size: 1.75rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .action-lg {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .action-md {
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .action-sm {
+  font-size: 1.125rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .action-xs {
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .action-xxs {
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-family: "National 2 Condensed", sans-serif;
+  line-height: 130%;
+}
+.pos .body-xl {
+  font-size: 1.75rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+.pos .body-lg {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+.pos .body-md {
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+.pos .body-sm {
+  font-size: 1.125rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+.pos .body-xs {
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+.pos .body-xxs {
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-family: "National 2 Narrow", sans-serif;
+  line-height: 150%;
+}
+
 /* Tags Generals CSS */
 .material-symbols-outlined {
   margin: 0;
@@ -712,42 +973,6 @@ a:not([href]):not([class]):hover {
 }
 
 /* Tags Generals CSS */
-.size-xxxs {
-  font-size: 0.125rem;
-}
-
-.size-xxs {
-  font-size: 0.25rem;
-}
-
-.size-xs {
-  font-size: 0.5rem;
-}
-
-.size-sm {
-  font-size: 0.75rem;
-}
-
-.size-md {
-  font-size: 1rem;
-}
-
-.size-lg {
-  font-size: 1.5rem;
-}
-
-.size-xl {
-  font-size: 2rem;
-}
-
-.size-xxl {
-  font-size: 2.5rem;
-}
-
-.size-xxxl {
-  font-size: 3rem;
-}
-
 /** spacing utilities ***/
 .m-0 {
   margin: 0 !important;

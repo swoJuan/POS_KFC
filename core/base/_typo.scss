@@ -1,4 +1,4 @@
-@use "../abstracts/index" as *;
+@use "../abstracts/index"as *;
 
 
 /** CSS Typography **/
@@ -14,55 +14,15 @@
 **/
 
 /* Text Styles  */
-.mxp-h1,
-.mxp-h2,
-.mxp-h3,
-.mxp-h4,
-.mxp-h5,
-.mxp-h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-{
-  font-family: $font-national2Condensed;
-  line-height: normal;
-  letter-spacing: 0%;
-  font-weight: 500;
-  color: var(--gray-scale-dark);
-}
 
-.mxp-h1 {
-  font-size: 2rem;
-}
 
-.mxp-h2 {
-  font-size: 1.75rem;
-}
 
-.mxp-h3 {
-  font-size: 1.5rem;
-}
-
-.mxp-h4 {
-  font-size: 1.25rem;
-}
-
-.mxp-h5 {
-  font-size: 1.125rem;
-}
-
-.mxp-h6 {
-  font-size: 1rem;
-}
 
 
 p {
   color: var(--gray-scale-dark);
   line-height: 120%;
-  font-size: $main-font-size;
+  font-size: 1.125rem;
   margin: 0;
   padding: 0;
 }
@@ -94,7 +54,8 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-/* Estilos de fuente *//* Estilos de fuente */
+/* Estilos de fuente */
+/* Estilos de fuente */
 
 
 .font-thin {
@@ -110,7 +71,8 @@ a:not([href]):not([class]):hover {
 }
 
 .font-regular {
-  font-weight: 400; /* Normal */
+  font-weight: 400;
+  /* Normal */
 }
 
 .font-medium {
@@ -146,18 +108,17 @@ a:not([href]):not([class]):hover {
 }
 
 
-$font-sizes: (
-  14: 0.875rem,  // 14px
-  16: 1rem,      // 16px
-  18: 1.125rem,  // 18px
-  20: 1.25rem,   // 20px
-  24: 1.5rem,    // 24px
-  28: 1.75rem,   // 28px
-  32: 2rem,      // 32px
-  36: 2.25rem,   // 36px
-  40: 2.5rem,    // 40px
-  44: 2.75rem,   // 44px
-  48: 3rem       // 48px
+$font-sizes: (14: 0.875rem, // 14px
+  16: 1rem, // 16px
+  18: 1.125rem, // 18px
+  20: 1.25rem, // 20px
+  24: 1.5rem, // 24px
+  28: 1.75rem, // 28px
+  32: 2rem, // 32px
+  36: 2.25rem, // 36px
+  40: 2.5rem, // 40px
+  44: 2.75rem, // 44px
+  48: 3rem // 48px
 );
 
 @for $i from 14 through 48 {
@@ -165,5 +126,239 @@ $font-sizes: (
     .font-#{$i} {
       font-size: map-get($font-sizes, $i);
     }
+  }
+}
+
+// Variables
+$line-height-compact: 130%;
+$line-height-expanded: 150%;
+
+// Mixins
+@mixin font-settings($size, $weight, $font-family, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $font-family;
+  line-height: $line-height;
+}
+
+// Pantallas K Styles
+.pantallas-k {
+
+  // Headings
+  .mp-h1,
+  h1 {
+    @include font-settings(4.5rem, bold, $font-national2Condensed, $line-height-compact); // 72px
+  }
+
+  .mp-h2,
+  h2 {
+    @include font-settings(4rem, bold, $font-national2Condensed, $line-height-compact); // 64px
+  }
+
+  .mp-h3,
+  h3 {
+    @include font-settings(3.5rem, medium, $font-national2Condensed, $line-height-compact); // 56px
+  }
+
+  .mp-h4,
+  h4 {
+    @include font-settings(3rem, medium, $font-national2Condensed, $line-height-compact); // 48px
+  }
+
+  .mp-h5,
+  h5 {
+    @include font-settings(2.5rem, medium, $font-national2Condensed, $line-height-compact); // 40px
+  }
+
+  .mp-h6,
+  h6 {
+    @include font-settings(2rem, medium, $font-national2Condensed, $line-height-compact); // 32px
+  }
+
+  // Titles
+  .title-xl {
+    @include font-settings(4.5rem, normal, $font-national2Condensed, $line-height-compact); // 72px
+  }
+
+  .title-lg {
+    @include font-settings(4rem, normal, $font-national2Condensed, $line-height-compact); // 64px
+  }
+
+  .title-md {
+    @include font-settings(3.5rem, normal, $font-national2Condensed, $line-height-compact); // 56px
+  }
+
+  .title-sm {
+    @include font-settings(3rem, normal, $font-national2Condensed, $line-height-compact); // 48px
+  }
+
+  .title-xs {
+    @include font-settings(2.5rem, normal, $font-national2Condensed, $line-height-compact); // 40px
+  }
+
+  .title-xxs {
+    @include font-settings(2rem, normal, $font-national2Condensed, $line-height-compact); // 32px
+  }
+
+  // Action
+  .action-xl {
+    @include font-settings(3rem, normal, $font-national2Condensed, $line-height-compact); // 48px
+  }
+
+  .action-lg {
+    @include font-settings(2.5rem, normal, $font-national2Condensed, $line-height-compact); // 40px
+  }
+
+  .action-md {
+    @include font-settings(2rem, normal, $font-national2Condensed, $line-height-compact); // 32px
+  }
+
+  .action-sm {
+    @include font-settings(1.75rem, normal, $font-national2Condensed, $line-height-compact); // 28px
+  }
+
+  .action-xs {
+    @include font-settings(1.5rem, normal, $font-national2Condensed, $line-height-compact); // 24px
+  }
+
+  .action-xxs {
+    @include font-settings(1.25rem, normal, $font-national2Condensed, $line-height-compact); // 20px
+  }
+
+  // Body
+  .body-xl {
+    @include font-settings(3rem, normal, $font-national2narrow, $line-height-expanded); // 48px
+  }
+
+  .body-lg {
+    @include font-settings(2.5rem, normal, $font-national2narrow, $line-height-expanded); // 40px
+  }
+
+  .body-md {
+    @include font-settings(2rem, normal, $font-national2narrow, $line-height-expanded); // 32px
+  }
+
+  .body-sm {
+    @include font-settings(1.75rem, normal, $font-national2narrow, $line-height-expanded); // 28px
+  }
+
+  .body-xs {
+    @include font-settings(1.5rem, normal, $font-national2narrow, $line-height-expanded); // 24px
+  }
+
+  .body-xxs {
+    @include font-settings(1.25rem, normal, $font-national2narrow, $line-height-expanded); // 20px
+  }
+
+
+}
+
+// Pantallas POS Styles
+.pos {
+
+  // Headings
+  .mp-h1,
+  h1 {
+    @include font-settings(2.5rem, bold, $font-national2Condensed, $line-height-compact); // 40px
+  }
+
+  .mp-h2,
+  h2 {
+    @include font-settings(2.25rem, bold, $font-national2Condensed, $line-height-compact); // 36px
+  }
+
+  .mp-h3,
+  h3 {
+    @include font-settings(2rem, medium, $font-national2Condensed, $line-height-compact); // 32px
+  }
+
+  .mp-h4,
+  h4 {
+    @include font-settings(1.75rem, medium, $font-national2Condensed, $line-height-compact); // 28px
+  }
+
+  .mp-h5,
+  h5 {
+    @include font-settings(1.5rem, medium, $font-national2Condensed, $line-height-compact); // 24px
+  }
+
+  .mp-h6,
+  h6 {
+    @include font-settings(1.25rem, medium, $font-national2Condensed, $line-height-compact); // 20px
+  }
+
+  // Titles
+  .title-xl {
+    @include font-settings(2.5rem, normal, $font-national2Condensed, $line-height-compact); // 40px
+  }
+
+  .title-lg {
+    @include font-settings(2.25rem, normal, $font-national2Condensed, $line-height-compact); // 36px
+  }
+
+  .title-md {
+    @include font-settings(2rem, normal, $font-national2Condensed, $line-height-compact); // 32px
+  }
+
+  .title-sm {
+    @include font-settings(1.75rem, normal, $font-national2Condensed, $line-height-compact); // 28px
+  }
+
+  .title-xs {
+    @include font-settings(1.5rem, normal, $font-national2Condensed, $line-height-compact); // 24px
+  }
+
+  .title-xxs {
+    @include font-settings(1.25rem, normal, $font-national2Condensed, $line-height-compact); // 20px
+  }
+
+  // Action
+  .action-xl {
+    @include font-settings(1.75rem, normal, $font-national2Condensed, $line-height-compact); // 28px
+  }
+
+  .action-lg {
+    @include font-settings(1.5rem, normal, $font-national2Condensed, $line-height-compact); // 24px
+  }
+
+  .action-md {
+    @include font-settings(1.25rem, normal, $font-national2Condensed, $line-height-compact); // 20px
+  }
+
+  .action-sm {
+    @include font-settings(1.125rem, normal, $font-national2Condensed, $line-height-compact); // 18px
+  }
+
+  .action-xs {
+    @include font-settings(1rem, normal, $font-national2Condensed, $line-height-compact); // 16px
+  }
+
+  .action-xxs {
+    @include font-settings(0.875rem, normal, $font-national2Condensed, $line-height-compact); // 14px
+  }
+
+  // Body
+  .body-xl {
+    @include font-settings(1.75rem, normal, $font-national2narrow, $line-height-expanded); // 28px
+  }
+
+  .body-lg {
+    @include font-settings(1.5rem, normal, $font-national2narrow, $line-height-expanded); // 24px
+  }
+
+  .body-md {
+    @include font-settings(1.25rem, normal, $font-national2narrow, $line-height-expanded); // 20px
+  }
+
+  .body-sm {
+    @include font-settings(1.125rem, normal, $font-national2narrow, $line-height-expanded); // 18px
+  }
+
+  .body-xs {
+    @include font-settings(1rem, normal, $font-national2narrow, $line-height-expanded); // 16px
+  }
+
+  .body-xxs {
+    @include font-settings(0.875rem, normal, $font-national2narrow, $line-height-expanded); // 14px
   }
 }
